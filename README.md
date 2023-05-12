@@ -1,12 +1,9 @@
 # 2023-AI-Final-Project
 
-## 主題：排生活日常
+## Main Idea
 
-目標：透過 ai 的幫助，讓使用者可以有效率的進行每一件事。像是幫助一位大學生安排要寫的作業順序、作息以及娛樂的時間。（我們目前可以先將使用者鎖定為大學生。）
+This project is designed to assist users in organizing their day effectively. With just a few inputs of their task and corresponding deadline, the tool automatically schedules the activity for them. It simplifies the scheduling process, allowing users to focus on the task at hand rather than worrying about managing their time.
 
-## 目前想法：
+## Implementation Method
 
-1. 2 種數據，第一種是記錄使用者一週真實的日程(目前的生活型態)，第二種是需要被安排的行程
-2. 把數據整理成 txt 檔
-3. 用 python 讀數據 將第二種數據模仿目前生活型態(第一種數據) 然後按照時間軸(類似課表)輸出行程 ()
-4. 附加功能：鬧鐘、鎖定 3c 產品(這部分不一定要跟現有的 app 連接，可以只是控制訊號)
+We are considering utilizing a variable-based model to represent the situation at hand, along with implementing the Q-learning algorithm for training purposes. This approach will enable us to create a flexible and adaptable model that can learn from experience and improve over time
