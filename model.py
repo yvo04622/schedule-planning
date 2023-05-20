@@ -34,15 +34,10 @@ def transform_text_to_event_schema(input_text):
 
 
 # Example usage
+event = []
 input_text = "There will be a meeting tomorrow from 9 AM to 11 AM."
 event_data = transform_text_to_event_schema(input_text)
-
-if event_data["start_time"] is not None and event_data["end_time"] is not None:
-    events = [event_data]
-    scheduled_events = schedule_events(events)
-    for event in scheduled_events:
-        print(event)
-else:
-    print("Invalid input. Start time or end time not provided.")
-my_schedule = schedule_events(event_data)
+print(type(event_data))
+event = event + [event_data]
+my_schedule = schedule_events(event)
 print(my_schedule)
