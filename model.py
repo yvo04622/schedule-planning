@@ -1,43 +1,67 @@
 import spacy
-from schedule import schedule_events
+from spacy.training import Example
+from numpy import random
 
-# Load the SpaCy English model
+
+# load data
+def load_data(file_path):
+    data = []
+    with open(file_path, 'r') as file:
+        for line in file:
+            line = line.strip()
+            parts = line.split('\t')
+            sentence = parts[0]
+            annotations = [tuple(map(int, entity.split(','))) for entity in parts[1:]]
+            data.append((sentence, annotations))
+    return data
+
+
+# Load the pre-trained English model
 nlp = spacy.load("en_core_web_sm")
 
+# Add your custom entity labels to the NER component
+ner = nlp.get_pipe("ner")
+ner.add_label("START_TIME")
+ner.add_label("DEADLINE")
+ner.add_label("DURATION")
+ner.add_label("EVENT_TITLE")
 
-def transform_text_to_event_schema(input_text):
-    # Tokenize the input text and apply POS tagging
-    doc = nlp(input_text)
+# Prepare and annotate your training data
+train_data = load_data('train_data.txt')  # Your annotated training data
 
-    # Extract relevant information from POS tagging results
-    event_title = None
-    start_time = None
-    end_time = None
+# doc = nlp("I have a meeting from 2 PM to 4 PM.")
+# entities = [(ent.text, ent.label_) for ent in doc.ents]
+# print(entities)
 
-    for token in doc:
-        if token.pos_ == "NOUN":
-            event_title = token.text
-        elif token.pos_ == "NUM" and token.dep_ == "nummod":
-            if not start_time:
-                start_time = int(token.text)
-            else:
-                end_time = int(token.text)
+# Convert the training data into spaCy's training format
+train_examples = []
+for sentence, annotations in train_data:
+    entities = []
+    for start, end, label in annotations:
+        entities.append((start, end, label))
+    train_examples.append(Example.from_dict(nlp.make_doc(sentence), {"entities": entities}))
 
-    # Map extracted information to the event schema format
-    event_schema = {
-        "title": event_title,
-        "start_time": start_time,
-        "end_time": end_time,
-    }
+# Train the NER component
+optimizer = nlp.initialize()
+for _ in range(10):  # Number of training iterations
+    # Shuffle the training examples
+    random.shuffle(train_examples)
+    losses = {}
+    for example in train_examples:
+        nlp.update([example], sgd=optimizer, losses=losses)
 
-    return event_schema
+# Evaluate the trained model
+evaluation_data = load_data('eval_data.txt')  # Your evaluation dataset
 
+# Convert the evaluation data into spaCy's Doc objects
+eval_docs = [nlp.make_doc(sentence) for sentence, _ in evaluation_data]
 
-# Example usage
-event = []
-input_text = "There will be a meeting tomorrow from 9 AM to 11 AM."
-event_data = transform_text_to_event_schema(input_text)
-print(type(event_data))
-event = event + [event_data]
-my_schedule = schedule_events(event)
-print(my_schedule)
+# Run the trained model on the evaluation data
+for doc, (_, annotations) in zip(eval_docs, evaluation_data):
+    doc = nlp(doc.text)
+    # Extract the predicted entities from the doc
+    predicted_entities = [(ent.text, ent.label_) for ent in doc.ents]
+    # Compare the predicted entities with the gold annotations to calculate metrics
+
+# Save the trained model for future use
+nlp.to_disk("custom_ner_model")

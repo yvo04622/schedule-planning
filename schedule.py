@@ -1,15 +1,17 @@
 def schedule_events(events):
     sorted_events = sorted(events, key=lambda x: x['start_time'])
-    print(sorted_events)
+    # print(sorted_events)
     scheduled_events = []
 
-    current_event = sorted_events[0]
-    scheduled_events.append(current_event)
+    # current_event = sorted_events[0]
+    # scheduled_events.append(current_event)
 
-    for event in sorted_events[1:]:
-        if event["start_time"] >= current_event["end_time"]:
-            scheduled_events.append(event)
-            current_event = event
+    # for event in sorted_events[1:]:
+    #     if event["start_time"] >= current_event["end_time"]:
+    #         scheduled_events.append(event)
+    #         current_event = event
+    for event in sorted_events[0:]:
+        scheduled_events.append(event)
 
     return scheduled_events
 
