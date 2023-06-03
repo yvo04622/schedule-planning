@@ -6,6 +6,7 @@ def parse_time(time_str):
     return time_obj
 
 
+# seperate data
 def read_events_from_file(file_path):
     events = []
 
@@ -20,26 +21,23 @@ def read_events_from_file(file_path):
 
         event = {'name': name, 'start_time': start_time, 'deadline': deadline}
         events.append(event)
-    """
-    for event in events:
-        print(f"Event: {event['name']}")
-        print(f"Start Time: {event['start_time']}")
-        print(f"End Time: {event['deadline']}")
-        print()
-    """
 
     return events
 
 
+# read data
 file_path = 'test/output.txt'
 events = read_events_from_file(file_path)
-# routine = read_events_from_file('daily_routine.txt')
+
+# file_path = 'daily_routine.txt'
+# routine = read_events_from_file(file_path)
 
 
+#scheduling
 def schedule_events(events):
-    print('------scheduling------')
     schedule = []
-
+    give_up = []
+    # #add daily routine to schedule first
     # for event in routine:
     #     scheduled_event = {
     #         'name': event['name'],
@@ -47,24 +45,50 @@ def schedule_events(events):
     #         'end_time': event['deadline']
     #     }
     #     schedule.append(scheduled_event)
-
+    # use deadline to sort the events
     sorted_events = sorted(events, key=lambda event: event['deadline'])
+    # add events to schedule
     for event in sorted_events:
-        scheduled_event = {
-            'name': event['name'],
-            'start_time': event['start_time'],
-            'end_time': event['deadline']
-        }
-        schedule.append(scheduled_event)
-    return schedule
+        #check overlapped
+        for scheduled_event in schedule:
+            if scheduled_event['start_time'] <= event['start_time'] and scheduled_event[
+                    'end_time'] >= event['start_time']:
+                event['start_time'] = scheduled_event['end_time']
+            elif scheduled_event['start_time'] <= event['deadline'] and scheduled_event[
+                    'end_time'] >= event['deadline']:
+                event['deadline'] = scheduled_event['start_time']
+            elif scheduled_event['start_time'] > event['start_time'] and scheduled_event[
+                    'end_time'] < event['deadline']:
+                new_scheduled_event = {
+                    'name': event['name'],
+                    'start_time': event['start_time'],
+                    'end_time': scheduled_event['start_time']
+                }
+                schedule.append(new_scheduled_event)
+                event['start_time'] = scheduled_event['end_time']
+
+        if event['start_time'] < event['deadline']:
+            new_scheduled_event = {
+                'name': event['name'],
+                'start_time': event['start_time'],
+                'end_time': event['deadline']
+            }
+            schedule.append(new_scheduled_event)
+        else:
+            give_up.append(event['name'])
+        schedule = sorted(schedule, key=lambda event: event['start_time'])
+    return schedule, give_up
 
 
-schedule = schedule_events(events)
+schedule, give_up = schedule_events(events)
+
+# Print the schedule in chronological order.
+print("Today's schedule:")
 schedule = sorted(schedule, key=lambda event: event['start_time'])
-
-# 輸出結果
 for event in schedule:
-    print(f"Event: {event['name']}")
-    print(f"Start Time: {event['start_time']}")
-    print(f"End Time: {event['end_time']}")
-    print()
+    print(f"{event['start_time']} - {event['end_time']} {event['name']}")
+
+print()
+print("Give up event:")
+for event in give_up:
+    print(event)
