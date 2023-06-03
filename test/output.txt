@@ -1,0 +1,5 @@
+study numerical methods,10:00,11:30
+organization lab5,09:00,10:00
+project,20:00,20:30
+meeting,21:00,23:30
+study wireless networks,15:00,17:00
