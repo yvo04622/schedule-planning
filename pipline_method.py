@@ -1,4 +1,17 @@
-[
+import pandas as pd
+from tqdm import tqdm
+import spacy
+from spacy.tokens import DocBin
+
+nlp = spacy.blank("en")  # Load a new spacy model
+db = DocBin()  # Create a DocBin object
+
+# with open('data/train_data.txt') as f:
+#     lines = f.readlines()
+
+# print(lines)
+train_data = [
+    [
         "I need to finish the task in 6 hours.\r", {
             "entities": [[21, 25, "EVENT_TITLE"], [29, 30, "DURATION"]]
         }
@@ -98,3 +111,18 @@
     ], ["", {
         "entities": []
     }]
+]
+
+for text, annot in tqdm(train_data):  # data in previous format
+    doc = nlp.make_doc(text)  # create doc object from text
+    ents = []
+    for start, end, label in annot["entities"]:  # add character indexes
+        span = doc.char_span(start, end, label=label, alignment_mode="contract")
+        if span is None:
+            print("Skipping entity")
+        else:
+            ents.append(span)
+    doc.ents = ents  # label the text with the ents
+    db.add(doc)
+
+db.to_disk("dev.spacy")  # save the docbin object

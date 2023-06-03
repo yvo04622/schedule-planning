@@ -1,0 +1,201 @@
+She has to pick up groceries from 11:16 A.M. to 1:39 P.M.
+She has to go for a workout from 4:15 P.M. to 6:34 P.M.
+She has to take a break from work from 3:44 P.M. to 5:14 P.M.
+I want to play games from 2:13 P.M. to 4:44 P.M.
+She want to eat dinner with clients from 2:44 P.M. to 4:12 P.M.
+I have to do my homework from 2:11 P.M. to 4:44 P.M.
+I have to prepare for midterm test from 2:44 P.M. to 4:10 P.M.
+I have to complete the task before 4:09 P.M.
+I have to relax after 4:08 P.M.
+I have to sleep before 4:07 P.M.
+I need to finish the task in 5 hours.
+I have a meeting from 2 PM to 6 AM.
+Reminder for the presentation at 5 AM.
+I have a presentation from 9 AM to 12 AM.
+She has a doctor's appointment from 2 PM to 6 PM.
+We are attending a conference from 11 AM to 9 PM.
+He has a lunch meeting from 12 PM to 5 PM.
+They have a team building activity from 2 PM to 6 PM.
+I will be in a training session from 5 AM to 10 PM.
+She is attending a wedding ceremony from 2 PM to 6 PM.
+We have a client meeting from 11 AM to 10 PM.
+He has a business trip from 2 AM to 6 PM.
+They have a project deadline from 5 PM to 9 PM.
+She will arrive at 2 AM and leave at 6 PM.
+The concert starts at 5 PM and ends at 10 PM.
+They have a lunch break from 2 PM to 6 PM.
+The movie starts at 6 PM, and the doors open at 4 PM.
+She has a yoga class at 8 PM.
+He has a business trip from 2 AM to 6 PM.
+The workshop starts at 2 AM and ends at 6 PM.
+I have to cook at 5 PM.
+She needs to study at 5 PM.
+We have to clean the house at 10 AM.
+They need to exercise at 5 AM.
+I have to call my friend at 5 PM.
+She needs to prepare for the presentation at 5 AM.
+We have to take the dog for a walk at 5 AM.
+They need to go grocery shopping at 5 PM.
+I have to submit the application by 5 PM.
+She needs to pick up the kids from school at 9 PM.
+He has to finish the project by tomorrow at 5 PM.
+The conference starts tomorrow morning and ends on Friday evening.
+The exhibition starts next week and ends on Monday.
+The training program starts in two days and ends on Wednesday.
+The festival starts next month and ends on the 14th.
+The tournament starts tomorrow afternoon and ends on Sunday night.
+The workshop starts next week and ends on Friday afternoon.
+The conference starts in three days and ends on Sunday evening.
+The seminar starts tomorrow morning and ends on Friday afternoon.
+The exhibition starts next month and ends on the 29th.
+The game event starts tomorrow and ends on Wednesday afternoon.
+The sales ends at 5 PM.
+The promotion ends at 5 PM.
+The auction ends at 5 PM.
+The concert ends at 11 PM.
+The exhibition ends at 5 PM.
+The show ends at 5 PM.
+The seminar ends at 5 PM.
+The conference ends at 5 PM.
+The workshop ends at 5 PM.
+The event ends at 5 PM.
+I will be in a coaching session from 2 PM to 6 PM.
+He has a guitar lesson at 5 PM.
+They have a swimming practice at 2 PM.
+She has a dance rehearsal at 6 PM.
+I have a piano class at 5 PM.
+She has a fitness training at 5 AM.
+We have a client meeting from 5 PM to 9 PM.
+Reminder for the interview at 11 AM.
+I need to finish my homework before 12:35 P.M.
+I need to submit my report before 7:04 P.M.
+I have a meeting from 2 PM to 6 PM.
+Reminder for the presentation at 12 AM.
+I have a presentation from 9 AM to 10 PM.
+She has a doctor's appointment from 2 PM to 6 PM.
+We are attending a conference from 12 AM to 6 PM.
+He has a lunch meeting from 10 AM to 9 PM.
+They have a team building activity from 2 PM to 6 PM.
+I will be in a training session from 5 PM to 11 PM.
+She is attending a wedding ceremony from 2 PM to 6 PM.
+We have a client meeting from 10 AM to 12 PM.
+He has a business trip from 2 AM to 6 PM.
+They have a project deadline from 2 PM to 6 PM.
+She will arrive at 2 AM and leave at 6 PM.
+The concert starts at 2 AM and ends at 12 PM.
+They have a lunch break from 12 PM to 9 PM.
+The movie starts at 6 PM, and the doors open at 2 PM.
+She has a yoga class at 3 AM.
+He has a business trip from 2 AM to 6 PM.
+The workshop starts at 2 AM and ends at 6 PM.
+I have to cook at 2 PM.
+She needs to study at 6 AM.
+We have to clean the house at 12 AM.
+They need to exercise at 5 AM.
+I have to call my friend at 9 PM.
+She needs to prepare for the presentation at 2 AM.
+We have to take the dog for a walk at 6 PM.
+They need to go grocery shopping at 5 PM.
+I have to submit the application by 9 PM.
+She needs to pick up the kids from school at 2 PM.
+He has to finish the project by tomorrow at 6 PM.
+The conference starts tomorrow morning and ends on Sunday evening.
+The exhibition starts next week and ends on Monday.
+The training program starts in one days and ends on Wednesday.
+The festival starts last month and ends on the 31st.
+The tournament starts tomorrow afternoon and ends on Friday night.
+The workshop starts next week and ends on Monday afternoon.
+The conference starts in eight days and ends on Friday evening.
+The seminar starts tomorrow morning and ends on Sunday afternoon.
+The exhibition starts next month and ends on the 30th.
+The game event starts tomorrow and ends on Thursday afternoon.
+The sales ends at 2 PM.
+The promotion ends at 5 PM.
+The auction ends at 6 PM.
+The concert ends at 10 AM.
+The exhibition ends at 3 PM.
+The show ends at 3 PM.
+The seminar ends at 3 PM.
+The conference ends at 3 PM.
+The workshop ends at 3 PM.
+The event ends at 3 PM.
+I will be in a coaching session from 3 AM to 9 PM.
+He has a guitar lesson at 3 PM.
+They have a swimming practice at 3 AM.
+She has a dance rehearsal at 3 PM.
+I have a piano class at 3 PM.
+She has a fitness training at 3 AM.
+We have a client meeting from 3 AM to 9 PM.
+Reminder for the interview at 10 PM.
+I need to finish my homework before 11:26 A.M.
+I need to submit my report before 6:29 A.M.
+I need to complete the project before 7:59 P.M.
+I need to finish reading the book before 11:59 P.M.
+I need to prepare for the presentation before 9:59 A.M.
+I need to finalize the budget before 2:59 P.M.
+I need to complete the online course before 1:59 P.M.
+I need to finish writing the essay before 7:59 P.M.
+I need to study for the exam before 6:59 P.M.
+I need to finish the presentation slides before 9:59 P.M.
+I need to send the email before 5:59 P.M.
+I need to review the document before 4:59 A.M.
+I need to complete the survey before 2:59 A.M.
+I need to finish the task before 3:59 P.M.
+I need to analyze the data from 10:59 A.M. to 4:59 P.M.
+I need to review the financial reports from 5:59 A.M. to 11:59 A.M.
+I need to analyze the market trends from 6:52 P.M. to 8:28 P.M.
+I need to examine the research findings from 10:35 A.M. to 12:23 P.M.
+I need to analyze the customer feedback from 5:34 A.M. to 10:46 A.M.
+I need to process the data sets from 2:39 P.M. to 5:54 P.M.
+I need to review the patient records from 10:55 A.M. to 12:59 P.M.
+He has a cooking workshop from 9:59 A.M. to 11:25 P.M.
+She has a painting class from 8:51 P.M. to 9:59 P.M.
+He has a coding workshop from 12:21 A.M. to 12:59 P.M.
+He has a photography workshop from 6:21 P.M. to 8:59 P.M.
+She has a music class from 10:21 A.M. to 1:59 P.M.
+She has a language course from 5:51 A.M. to 11:56 A.M.
+He has a cooking demonstration from 1:52 P.M. to 7:59 P.M.
+She has a dance practice from 2:59 P.M. to 4:17 P.M.
+He has a cooking class from 11:47 A.M. to 8:59 P.M.
+She has a chess class from 10:53 A.M. to 7:58 P.M.
+He has a tennis lesson from 1:43 P.M. to 7:42 P.M.
+I have to attend a business meeting from 5:59 A.M. to 10:47 A.M.
+I have to clean the house from 1:42 P.M. to 5:49 P.M.
+I have to pick up my kids from school from 1:47 P.M. to 5:29 P.M.
+I have to buy food at supermarket from 11:47 A.M. to 12:59 P.M.
+I have to go to the gym from 5:59 A.M. to 10:47 A.M.
+I have to run errands from 11:58 A.M. to 8:33 P.M.
+I have to meet a friend for lunch from 12:59 P.M. to 5:52 P.M.
+I have to do grocery shopping from 11:59 A.M. to 12:37 P.M.
+I have to go for a dental appointment from 1:47 P.M. to 5:39 P.M.
+I have to walk my dog from 5:47 P.M. to 9:12 P.M.
+I have to visit the library from 12:47 A.M. to 8:41 P.M.
+I have to do laundry from 11:59 A.M. to 12:43 P.M.
+I have to visit my grandparents from 1:59 P.M. to 9:45 P.M.
+I have to attend a webinar from 1:46 P.M. to 9:59 P.M."
+I have to go for a job interview from 10:47 A.M. to 11:59 P.M.
+I have to attend a parent-teacher meeting from 5:47 P.M. to 8:59 P.M.
+I have to take a nap from 3:47 P.M. to 9:15 P.M.
+I have to go for a jog from 8:47 A.M. to 11:16 A.M.
+I have to volunteer at the local shelter from 10:47 A.M. to 1:59 P.M.
+I have to go for a bike ride from 2:17 P.M. to 8:38 P.M.
+"She has to go shopping from 10:09 A.M. to 8:27 P.M.
+She has to go to the bank from 2:06 P.M. to 8:59 P.M.
+He has to go for a haircut from 11:24 A.M. to 12:59 P.M.
+He has to meet with his advisor from 2:16 P.M. to 9:59 P.M.
+She has to have a meeting with colleagues from 10:27 A.M. to 3:59 P.M.
+She has to go to the post office from 3:37 P.M. to 8:59 P.M.
+She has to meet a colleague for lunch from 10:57 A.M. to 3:26 P.M.
+He has to meet with his supervisor from 1:37 P.M. to 7:19 P.M.
+She has to take a shower from 2:27 P.M. to 8:39 P.M.
+She has to pick up groceries from 11:19 A.M. to 7:29 P.M.
+She has to go for a workout from 4:39 P.M. to 8:49 P.M.
+She has to take a break from work from 3:17 P.M. to 9:27 P.M.
+I want to play games from 2:37 P.M. to 7:37 P.M.
+She want to eat dinner with clients from 2:47 P.M. to 9:47 P.M.
+I have to do my homework from 2:16 P.M. to 9:57 P.M.
+I have to prepare for midterm test from 2:26 P.M. to 9:36 P.M.
+I have to complete the task before 7:46 P.M.
+I have to relax after 7:21 P.M.
+I have to sleep before 7:41 P.M.
+I need to finish the task in 6 hours.

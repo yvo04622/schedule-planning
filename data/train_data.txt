@@ -1,800 +1,2730 @@
-("I have a meeting from 2 PM to 4 PM.", [(23, 26, "START_TIME"), (31, 34, "END_TIME"), (10, 16, EVENT_TITLE)]),
-("Reminder for the presentation at 10 AM.", [(34, 38, "START_TIME"), (18, 29, EVENT_TITLE)]),
-("I have a presentation from 9 AM to 11 AM.", [(28, 31, "START_TIME"), (36, 40, "END_TIME"), (10, 21, "EVENT_TITLE")]),
-("She has a doctor's appointment from 3 PM to 5 PM.", [(37, 40, "START_TIME"), (45, 48, "END_TIME"), (11, 30, "EVENT_TITLE")]),
-("We are attending a conference from 10 AM to 4 PM.", [(36, 40, "START_TIME"), (45, 48, "END_TIME"), (20, 29, "EVENT_TITLE")]),
-("He has a lunch meeting from 12 PM to 1 PM.", [(29, 33, "START_TIME"), (38, 41, "END_TIME"), (16, 22, "EVENT_TITLE")]),
-("They have a team building activity from 2 PM to 5 PM.", [(41, 44, "START_TIME"), (49, 52, "END_TIME"), (13, 34, "EVENT_TITLE")]),
-("I will be in a training session from 9 AM to 12 PM.", [(38, 41, "START_TIME"), (46, 50, "END_TIME"), (16, 31, "EVENT_TITLE")]),
-("She is attending a wedding ceremony from 2 PM to 6 PM.", [(42, 45, "START_TIME"), (50, 53, "END_TIME"), (20, 35, "EVENT_TITLE")]),
-("We have a client meeting from 10 AM to 11 AM.", [(31, 35, "START_TIME"), (40, 44, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("He has a business trip from 9 AM to 5 PM.", [(29, 32, "START_TIME"), (37, 40, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("They have a project deadline from 2 PM to 6 PM.", [(35, 38, "START_TIME"), (43, 46, "END_TIME"), (13, 28, "EVENT_TITLE")]),
-("She will arrive at 9 AM and leave at 6 PM.", [(20, 23, "START_TIME"), (38, 41, "END_TIME")]),
-("The concert starts at 7 PM and ends at 12 PM.", [(22, 25, "START_TIME"), (39, 43, "END_TIME"), (5, 10, "EVENT_TITLE")]),
-("They have a lunch break from 12 PM to 1 PM.", [(30, 34, "START_TIME"), (39, 42, "END_TIME"), (13, 23, "EVENT_TITLE")]),
-("The movie starts at 8 PM, and the doors open at 7 PM.", [(48, 51, "START_TIME"), (20, 23, "END_TIME"), (5, 9, EVENT_TITLE)]),
-("She has a yoga class at 5 PM.", [(25, 28, "START_TIME"), (11, 20, "EVENT_TITLE")]),
-("He has a business trip from 9 AM to 5 PM.", [(29, 32, "START_TIME"), (37, 40, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("The workshop starts at 9 AM and ends at 5 PM.", [(20, 22, "START_TIME"), (35, 37, "END_TIME"), (4, 12, "EVENT_TITLE")]),
-("I have to cook at 5 PM.", [(19, 22, START_TIME), (11, 14, EVENT_TITLE)]),
-("She needs to study at 7 PM.", [(23, 26, "START_TIME"), (14, 18, "EVENT_TITLE")]),
-("We have to clean the house at 10 AM.", [(31, 35, "START_TIME"), (12, 26, "EVENT_TITLE")]),
-("They need to exercise at 6 AM.", [(26, 29, "START_TIME"), (14, 21, "EVENT_TITLE")]),
-("I have to call my friend at 6 PM.", [(29, 32, "START_TIME"), (11, 24, "EVENT_TITLE")]),
-("She needs to prepare for the presentation at 9 AM.", [(46, 49, "START_TIME"), (30, 41, "EVENT_TITLE")]),
-("We have to take the dog for a walk at 8 AM.", [(39, 42, "START_TIME"), (12, 34, "EVENT_TITLE")]),
-("They need to go grocery shopping at 4 PM.", [(37, 40, "START_TIME"), (14, 32, "EVENT_TITLE")]),
-("I have to submit the application by 5 PM.", [(37, 40, "END_TIME"), (11, 32, "EVENT_TITLE")]),
-("She needs to pick up the kids from school at 3 PM.", [(46, 49, "START_TIME"), (14, 29, "EVENT_TITLE")]),
-("He has to finish the project by tomorrow at 6 PM.", [(33, 48, "END_TIME"), (22, 28, "EVENT_TITLE")]),
-("The conference starts tomorrow morning and ends on Friday evening.", [(23, 38, "START_TIME"), (52, 65, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The exhibition starts next week and ends on Sunday.", [(23, 31, "START_TIME"), (45, 50, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The training program starts in two days and ends on Wednesday.", [(29, 39, "START_TIME"), (53, 61, "END_TIME"), (5, 20, "EVENT_TITLE")]),
-("The festival starts next month and ends on the 15th.", [(21, 30, "START_TIME"), (41, 51, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The tournament starts tomorrow afternoon and ends on Sunday night.", [(23, 40, "START_TIME"), (51, 65, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The workshop starts next week and ends on Friday afternoon.", [(21, 29, "START_TIME"), (40, 58, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The conference starts in three days and ends on Sunday evening.", [(23, 35, "START_TIME"), (46, 62, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The seminar starts tomorrow morning and ends on Friday afternoon.", [(20, 35, "START_TIME"), (46, 64, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The exhibition starts next month and ends on the 20th.", [(23, 39, "START_TIME"), (50, 60, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The game event starts tomorrow and ends on Wednesday afternoon.", [(23, 30, "START_TIME"), (41, 62, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The sales ends at 6 PM.", [(19, 22, END_TIME), (5, 9, EVENT_TITLE)]),
-("The promotion ends at 8 PM.", [(23, 26, "END_TIME"), (6, 13, "EVENT_TITLE")]),
-("The auction ends at 5 PM.", [(21, 24, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The concert ends at 10 PM.", [(21, 25, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The exhibition ends at 7 PM.", [(24, 27, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The show ends at 9 PM.", [(18, 21, "END_TIME"), (5, 8, "EVENT_TITLE")]),
-("The seminar ends at 4 PM.", [(21, 24, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The conference ends at 5 PM.", [(23, 26, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The workshop ends at 6 PM.", [(22, 25, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The event ends at 7 PM.", [(19, 22, "END_TIME"), (5, 9, "EVENT_TITLE")]),
-("I will be in a coaching session from 3 PM to 6 PM.", [(38, 41, "START_TIME"), (46, 49, "END_TIME"), (16, 31, "EVENT_TITLE")]),
-("He has a guitar lesson at 3 PM.", [(27, 30, "START_TIME"), (10, 22, "EVENT_TITLE")]),
-("They have a swimming practice at 6 PM.", [(34, 37, "START_TIME"), (13, 29, "EVENT_TITLE")]),
-("She has a dance rehearsal at 4 PM.", [(30, 33, "START_TIME"), (11, 25, "EVENT_TITLE")]),
-("I have a piano class at 7 PM.", [(25, 28, "START_TIME"), (10, 20, "EVENT_TITLE")]),
-("She has a fitness training at 9 AM.", [(31, 34, "START_TIME"), (11, 26, "EVENT_TITLE")]),
-("We have a client meeting from 3 PM to 5 PM.", [(31, 26, "START_TIME"), (39, 42, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("Reminder for the interview at 11 AM.", [(31, 35, "START_TIME"), (18, 26, "EVENT_TITLE")]),
-("I need to finish my homework before 11:59 P.M.", [(37, 45, END_TIME), (21, 28, EVENT_TITLE)]),
-("I need to submit my report before 5:00 P.M.", [(35, 43, "END_TIME"), (21, 26, "EVENT_TITLE")]),
-("I have a meeting from 3 PM to 9 PM.", [(23, 26, "START_TIME"), (31, 34, "END_TIME"), (10, 16, EVENT_TITLE)]),
-("Reminder for the presentation at 12 AM.", [(34, 38, "START_TIME"), (18, 29, EVENT_TITLE)]),
-("I have a presentation from 5 AM to 12 PM.", [(28, 31, "START_TIME"), (36, 40, "END_TIME"), (10, 21, "EVENT_TITLE")]),
-("She has a doctor's appointment from 6 PM to 9 PM.", [(37, 40, "START_TIME"), (45, 48, "END_TIME"), (11, 30, "EVENT_TITLE")]),
-("We are attending a conference from 10 AM to 5 PM.", [(36, 40, "START_TIME"), (45, 48, "END_TIME"), (20, 29, "EVENT_TITLE")]),
-("He has a lunch meeting from 12 PM to 2 PM.", [(29, 33, "START_TIME"), (38, 41, "END_TIME"), (16, 22, "EVENT_TITLE")]),
-("They have a team building activity from 1 PM to 6 PM.", [(41, 44, "START_TIME"), (49, 52, "END_TIME"), (13, 34, "EVENT_TITLE")]),
-("I will be in a training session from 9 AM to 11 PM.", [(38, 41, "START_TIME"), (46, 50, "END_TIME"), (16, 31, "EVENT_TITLE")]),
-("She is attending a wedding ceremony from 3 PM to 8 PM.", [(42, 45, "START_TIME"), (50, 53, "END_TIME"), (20, 35, "EVENT_TITLE")]),
-("We have a client meeting from 12 AM to 11 AM.", [(31, 35, "START_TIME"), (40, 44, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("He has a business trip from 7 AM to 9 PM.", [(29, 32, "START_TIME"), (37, 40, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("They have a project deadline from 8 PM to 9 PM.", [(35, 38, "START_TIME"), (43, 46, "END_TIME"), (13, 28, "EVENT_TITLE")]),
-("She will arrive at 5 AM and leave at 9 PM.", [(20, 23, "START_TIME"), (38, 41, "END_TIME")]),
-("The concert starts at 5 PM and ends at 11 PM.", [(22, 25, "START_TIME"), (39, 43, "END_TIME"), (5, 10, "EVENT_TITLE")]),
-("They have a lunch break from 11 AM to 1 PM.", [(30, 34, "START_TIME"), (39, 42, "END_TIME"), (13, 23, "EVENT_TITLE")]),
-("The movie starts at 6 PM, and the doors open at 5 PM.", [(48, 51, "START_TIME"), (20, 23, "END_TIME"), (5, 9, EVENT_TITLE)]),
-("She has a yoga class at 8 AM.", [(25, 28, "START_TIME"), (11, 20, "EVENT_TITLE")]),
-("He has a business trip from 6 AM to 8 PM.", [(29, 32, "START_TIME"), (37, 40, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("The workshop starts at 7 AM and ends at 4 PM.", [(20, 22, "START_TIME"), (35, 37, "END_TIME"), (4, 12, "EVENT_TITLE")]),
-("I have to cook at 7 PM.", [(19, 22, START_TIME), (11, 14, EVENT_TITLE)]),
-("She needs to study at 8 AM.", [(23, 26, "START_TIME"), (14, 18, "EVENT_TITLE")]),
-("We have to clean the house at 11 AM.", [(31, 35, "START_TIME"), (12, 26, "EVENT_TITLE")]),
-("They need to exercise at 8 AM.", [(26, 29, "START_TIME"), (14, 21, "EVENT_TITLE")]),
-("I have to call my friend at 6 PM.", [(29, 32, "START_TIME"), (11, 24, "EVENT_TITLE")]),
-("She needs to prepare for the presentation at 9 AM.", [(46, 49, "START_TIME"), (30, 41, "EVENT_TITLE")]),
-("We have to take the dog for a walk at 9 PM.", [(39, 42, "START_TIME"), (12, 34, "EVENT_TITLE")]),
-("They need to go grocery shopping at 3 PM.", [(37, 40, "START_TIME"), (14, 32, "EVENT_TITLE")]),
-("I have to submit the application by 4 PM.", [(37, 40, "END_TIME"), (11, 32, "EVENT_TITLE")]),
-("She needs to pick up the kids from school at 5 PM.", [(46, 49, "START_TIME"), (14, 29, "EVENT_TITLE")]),
-("He has to finish the project by tomorrow at 9 PM.", [(33, 48, "END_TIME"), (22, 28, "EVENT_TITLE")]),
-("The conference starts tomorrow morning and ends on Monday evening.", [(23, 38, "START_TIME"), (52, 65, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The exhibition starts next week and ends on Monday.", [(23, 31, "START_TIME"), (45, 50, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The training program starts in one days and ends on Wednesday.", [(29, 39, "START_TIME"), (53, 61, "END_TIME"), (5, 20, "EVENT_TITLE")]),
-("The festival starts last month and ends on the 15th.", [(21, 30, "START_TIME"), (41, 51, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The tournament starts tomorrow afternoon and ends on Friday night.", [(23, 40, "START_TIME"), (51, 65, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The workshop starts next week and ends on Monday afternoon.", [(21, 29, "START_TIME"), (40, 58, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The conference starts in eight days and ends on Friday evening.", [(23, 35, "START_TIME"), (46, 62, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The seminar starts tomorrow morning and ends on Sunday afternoon.", [(20, 35, "START_TIME"), (46, 64, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The exhibition starts next month and ends on the 26th.", [(23, 39, "START_TIME"), (50, 60, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The game event starts tomorrow and ends on Thursday afternoon.", [(23, 30, "START_TIME"), (41, 58, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The sales ends at 6 PM.", [(19, 22, END_TIME), (5, 9, EVENT_TITLE)]),
-("The promotion ends at 7 PM.", [(23, 26, "END_TIME"), (6, 13, "EVENT_TITLE")]),
-("The auction ends at 4 PM.", [(21, 24, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The concert ends at 12 AM.", [(21, 25, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The exhibition ends at 6 PM.", [(24, 27, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The show ends at 8 PM.", [(18, 21, "END_TIME"), (5, 8, "EVENT_TITLE")]),
-("The seminar ends at 5 PM.", [(21, 24, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The conference ends at 9 PM.", [(23, 26, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The workshop ends at 7 PM.", [(22, 25, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The event ends at 1 PM.", [(19, 22, "END_TIME"), (5, 9, "EVENT_TITLE")]),
-("I will be in a coaching session from 6 AM to 6 PM.", [(38, 41, "START_TIME"), (46, 49, "END_TIME"), (16, 31, "EVENT_TITLE")]),
-("He has a guitar lesson at 8 PM.", [(27, 30, "START_TIME"), (10, 22, "EVENT_TITLE")]),
-("They have a swimming practice at 7 AM.", [(34, 37, "START_TIME"), (13, 29, "EVENT_TITLE")]),
-("She has a dance rehearsal at 1 PM.", [(30, 33, "START_TIME"), (11, 25, "EVENT_TITLE")]),
-("I have a piano class at 8 PM.", [(25, 28, "START_TIME"), (10, 20, "EVENT_TITLE")]),
-("She has a fitness training at 8 AM.", [(31, 34, "START_TIME"), (11, 26, "EVENT_TITLE")]),
-("We have a client meeting from 8 AM to 1 PM.", [(31, 26, "START_TIME"), (39, 42, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("Reminder for the interview at 12 PM.", [(31, 35, "START_TIME"), (18, 26, "EVENT_TITLE")]),
-("I need to finish my homework before 12:30 A.M.", [(37, 45, END_TIME), (21, 28, EVENT_TITLE)]),
-("I need to submit my report before 5:34 A.M.", [(35, 43, "END_TIME"), (21, 26, "EVENT_TITLE")]),
-("I need to complete the project before 6:30 P.M.", [(39, 47, "END_TIME"), (24, 30, "EVENT_TITLE")]),
-("I need to finish reading the book before 10:00 P.M.", [(42, 51, "END_TIME"), (18, 24, "EVENT_TITLE")]),
-("I need to prepare for the presentation before 9:00 A.M.", [(47, 55, "END_TIME"), (27, 38, "EVENT_TITLE")]),
-("I need to finalize the budget before 3:00 P.M.", [(38, 46, "END_TIME"), (11, 29, "EVENT_TITLE")]),
-("I need to complete the online course before 8:00 P.M.", [(45, 53, "END_TIME"), (24, 36, "EVENT_TITLE")]),
-("I need to finish writing the essay before 4:30 P.M.", [(43, 51, "END_TIME"), (18, 34, "EVENT_TITLE")]),
-("I need to study for the exam before 7:00 P.M.", [(37, 45, "END_TIME"), (11, 28, "EVENT_TITLE")]),
-("I need to finish the presentation slides before 2:00 P.M.", [(49, 57, "END_TIME"), (22, 33, "EVENT_TITLE")]),
-("I need to send the email before 1:30 P.M.", [(33, 41, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("I need to review the document before 9:20 A.M.", [(38, 46, "END_TIME"), (11, 29, "EVENT_TITLE")]),
-("I need to complete the survey before 8:30 A.M.", [(38, 46, "END_TIME"), (11, 29, "EVENT_TITLE")]),
-("I need to finish the task before 7:10 P.M.", [(34, 42, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("I need to analyze the data from 11:00 A.M. to 2:00 P.M.", [(33, 42, "START_TIME"), (47, 55, "END_TIME"), (11, 26, "EVENT_TITLE")]),
-("I need to review the financial reports from 9:00 A.M. to 11:00 A.M.", [(45, 53, "START_TIME"), (58, 67, "END_TIME"), (11, 38, "EVENT_TITLE")]),
-("I need to analyze the market trends from 1:00 P.M. to 4:00 P.M.", [(42, 50, "START_TIME"), (55, 63, "END_TIME"), (11, 35, "EVENT_TITLE")]),
-("I need to examine the research findings from 10:30 A.M. to 12:30 P.M.", [(46, 55, "START_TIME"), (60, 69, "END_TIME"), (11, 39, "EVENT_TITLE")]),
-("I need to analyze the customer feedback from 9:30 A.M. to 11:30 A.M.", [(46, 54, "START_TIME"), (59, 68, "END_TIME"), (11, 39, "EVENT_TITLE")]),
-("I need to process the data sets from 2:30 P.M. to 5:30 P.M.", [(38, ,46 "START_TIME"), (51, 59, "END_TIME"), (21, 36, "EVENT_TITLE")]),
-("I need to review the patient records from 10:00 A.M. to 12:00 P.M.", [(43, 52, "START_TIME"), (57, 66, "END_TIME"), (11, 36, "EVENT_TITLE")]),
-("He has a cooking workshop from 9:30 A.M. to 12:00 P.M.", [(32, 40, "START_TIME"), (45, 54, "END_TIME"), (10, 25, "EVENT_TITLE")]),
-("She has a painting class from 1:00 P.M. to 3:30 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("He has a coding workshop from 10:00 A.M. to 12:30 P.M.", [(31, 40, "START_TIME"), (45, 54, "END_TIME"), (10, 24, "EVENT_TITLE")]),
-("He has a photography workshop from 2:30 P.M. to 5:00 P.M.", [(36, 44, "START_TIME"), (49, 57, "END_TIME"), (10, 29, "EVENT_TITLE")]),
-("She has a music class from 11:00 A.M. to 1:30 P.M.", [(28, 37, "START_TIME"), (42, 50, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("She has a language course from 9:00 A.M. to 11:30 A.M.", [(32, 40, "START_TIME"), (45, 54, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("He has a cooking demonstration from 1:30 P.M. to 4:00 P.M.", [(37, 45, "START_TIME"), (50, 58, "END_TIME"), (10, 30, "EVENT_TITLE")]),
-("She has a dance practice from 2:00 P.M. to 4:30 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("He has a cooking class from 11:30 A.M. to 2:00 P.M.", [(29, 38, "START_TIME"), (43, 51, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("She has a chess class from 10:30 A.M. to 1:00 P.M.", [(28, 37, "START_TIME"), (42, 50, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("He has a tennis lesson from 6:00 P.M. to 8:30 P.M.", [(29, 37, "START_TIME"), (42, 50, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("I have to attend a business meeting from 9:00 A.M. to 11:00 A.M.", [(42, 50, "START_TIME"), (55, 64, "END_TIME"), (20, 35, "EVENT_TITLE")]),
-("I have to clean the house from 1:00 P.M. to 3:00 P.M.", [(32, 40, "START_TIME"), (45, 53, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("I have to pick up my kids from school from 3:30 P.M. to 5:30 P.M.", [(44, 52, "START_TIME"), (57, 65, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("I have to buy food at supermarket from 10:30 A.M. to 12:30 P.M.", [(40, 49, "START_TIME"), (54, 63, "END_TIME"), (11, 18, "EVENT_TITLE")]),
-("I have to go to the gym from 9:30 A.M. to 11:30 A.M.", [(30, 38, "START_TIME"), (43, 52, "END_TIME"), (11, 23, "EVENT_TITLE")]),
-("I have to run errands from 11:00 A.M. to 1:00 P.M.", [(28, 37, "START_TIME"), (42, 50, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("I have to meet a friend for lunch from 12:30 P.M. to 2:30 P.M.", [(40, 49, "START_TIME"), (54, 62, "END_TIME"), (11, 23, "EVENT_TITLE")]),
-("I have to do grocery shopping from 10:30 A.M. to 12:30 P.M.", [(36, 45, "START_TIME"), (50, 59, "END_TIME"), (22, 29, "EVENT_TITLE")]),
-("I have to go for a dental appointment from 3:00 P.M. to 5:00 P.M.", [(44, 52, "START_TIME"), (57, 65, "END_TIME"), (20, 37, "EVENT_TITLE")]),
-("I have to walk my dog from 5:30 P.M. to 7:30 P.M.", [(28, 36, "START_TIME"), (41, 49, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("I have to visit the library from 11:30 A.M. to 1:30 P.M.", [(34, 43, "START_TIME"), (48, 56, "END_TIME"), (11, 27, "EVENT_TITLE")]),
-("I have to do laundry from 10:00 A.M. to 12:00 P.M.", [(27, 36, "START_TIME"), (41, 50, "END_TIME"), (11, 20, "EVENT_TITLE")]),
-("I have to visit my grandparents from 3:00 P.M. to 5:00 P.M.", [(38, 46, "START_TIME"), (51, 59, "END_TIME"), (11, 31, "EVENT_TITLE")]),
-("I have to attend a webinar from 1:30 P.M. to 3:30 P.M.", [(33, 41, "START_TIME"), (46, 54, "END_TIME"), (11, 26, "EVENT_TITLE")]),
-("I have to go for a job interview from 10:00 A.M. to 12:00 P.M.", [(39, 48, "START_TIME"), (53, 62, "END_TIME"), (20, 32, "EVENT_TITLE")]),
-("I have to attend a parent-teacher meeting from 2:00 P.M. to 4:00 P.M.", [(48, 56, "START_TIME"), (61, 69, "END_TIME"), (20, 41, "EVENT_TITLE")]),
-("I have to take a nap from 3:30 P.M. to 5:30 P.M.", [(27, 35, "START_TIME"), (40, 48, "END_TIME"), (11, 20, "EVENT_TITLE")]),
-("I have to go for a jog from 8:30 A.M. to 10:30 A.M.", [(29, 37, "START_TIME"), (42, 51, "END_TIME"), (20, 22, "EVENT_TITLE")]),
-("I have to volunteer at the local shelter from 11:30 A.M. to 1:30 P.M.", [(47, 56, "START_TIME"), (61, 69, "END_TIME"), (11, 19, "EVENT_TITLE")]),
-("I have to go for a bike ride from 2:30 P.M. to 4:30 P.M.", [(35, 43, "START_TIME"), (48, 56, "END_TIME"), (20, 28, "EVENT_TITLE")]),
-("She has to go shopping from 11:30 A.M. to 2:00 P.M.", [(29, 38, "START_TIME"), (43, 51, "END_TIME"), (15, 22, "EVENT_TITLE")]),
-("She has to go to the bank from 1:30 P.M. to 4:00 P.M.", [(32, 40, "START_TIME"), (45, 53, "END_TIME"), (12, 25, "EVENT_TITLE")]),
-("He has to go for a haircut from 10:00 A.M. to 12:30 P.M.", [(33, 42, "START_TIME"), (47, 56, "END_TIME"), (20, 26, "EVENT_TITLE")]),
-("He has to meet with his advisor from 3:30 P.M. to 6:00 P.M.", [(38, 46, "START_TIME"), (51, 59, "END_TIME"), (11, 31, "EVENT_TITLE")]),
-("She has to have a meeting with colleagues from 12:30 P.M. to 3:00 P.M.", [(48, 57, "START_TIME"), (62, 70, "END_TIME"), (19, 25, "EVENT_TITLE")]),
-("She has to go to the post office from 1:30 P.M. to 4:00 P.M.", [(39, 47, "START_TIME"), (52, 60, "END_TIME"), (12, 32, "EVENT_TITLE")]),
-("She has to meet a colleague for lunch from 12:30 P.M. to 3:00 P.M.", [(43, 52, "START_TIME"), (57, 65, "END_TIME"), (11, 26, "EVENT_TITLE")]),
-("He has to meet with his supervisor from 3:30 P.M. to 6:00 P.M.", [(41, 49, "START_TIME"), (54, 62, "END_TIME"), (11, 34, "EVENT_TITLE")]),
-("She has to take a shower from 2:30 P.M. to 5:00 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (12, 24, "EVENT_TITLE")]),
-("She has to pick up groceries from 11:00 A.M. to 1:30 P.M.", [(35, 44, "START_TIME"), (49, 57, "END_TIME"), (12, 28, "EVENT_TITLE")]),
-("She has to go for a workout from 4:00 P.M. to 6:30 P.M.", [(34, 42, "START_TIME"), (47, 55, "END_TIME"), (21, 27, "EVENT_TITLE")]),
-("She has to take a break from work from 3:00 P.M. to 5:30 P.M.", [(40, 48, "START_TIME"), (53, 61, "END_TIME"), (12, 23, "EVENT_TITLE")]),
-("I want to play games from 2:00 P.M. to 4:30 P.M.", [(27, 35, "START_TIME"), (40, 48, "END_TIME"), (11, 20, "EVENT_TITLE")]),
-("She want to eat dinner with clients from 2:00 P.M. to 4:30 P.M.", [(42, 50, "START_TIME"), (55, 63, "END_TIME"), (13, 35, "EVENT_TITLE")]),
-("I have to do my homework from 2:00 P.M. to 4:30 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("I have to prepare for midterm test from 2:00 P.M. to 4:30 P.M.", [(41, 49, "START_TIME"), (54, 62, "END_TIME"), (11, 34, "EVENT_TITLE")]),
-("I have to complete the task before 4:30 P.M.", [(36, 44, "END_TIME"), (11, 27, "EVENT_TITLE")]),
-("I have to relax after 4:30 P.M.", [(23, 31, "START_TIME"), (11, 15, "EVENT_TITLE")]),
-("I have to sleep before 4:30 P.M.", [(24, 32, "END_TIME"), (11, 15, "EVENT_TITLE")]),
-("I need to finish the task in 6 hours.", [(35, 43, "DURATION"), (11, 29, "EVENT_TITLE")]),
-("I have a meeting from 9 PM to 3 AM.", [(23, 26, "START_TIME"), (31, 34, "END_TIME"), (10, 16, EVENT_TITLE)]),
-("Reminder for the presentation at 1 AM.", [(34, 38, "START_TIME"), (18, 29, EVENT_TITLE)]),
-("I have a presentation from 1 AM to 12 AM.", [(28, 31, "START_TIME"), (36, 40, "END_TIME"), (10, 21, "EVENT_TITLE")]),
-("She has a doctor's appointment from 1 PM to 2 PM.", [(37, 40, "START_TIME"), (45, 48, "END_TIME"), (11, 30, "EVENT_TITLE")]),
-("We are attending a conference from 11 AM to 1 PM.", [(36, 40, "START_TIME"), (45, 48, "END_TIME"), (20, 29, "EVENT_TITLE")]),
-("He has a lunch meeting from 12 PM to 2 PM.", [(29, 33, "START_TIME"), (38, 41, "END_TIME"), (16, 22, "EVENT_TITLE")]),
-("They have a team building activity from 1 PM to 2 PM.", [(41, 44, "START_TIME"), (49, 52, "END_TIME"), (13, 34, "EVENT_TITLE")]),
-("I will be in a training session from 1 AM to 10 PM.", [(38, 41, "START_TIME"), (46, 50, "END_TIME"), (16, 31, "EVENT_TITLE")]),
-("She is attending a wedding ceremony from 1 PM to 6 PM.", [(42, 45, "START_TIME"), (50, 53, "END_TIME"), (20, 35, "EVENT_TITLE")]),
-("We have a client meeting from 12 AM to 11 PM.", [(31, 35, "START_TIME"), (40, 44, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("He has a business trip from 1 AM to 2 PM.", [(29, 32, "START_TIME"), (37, 40, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("They have a project deadline from 1 PM to 2 PM.", [(35, 38, "START_TIME"), (43, 46, "END_TIME"), (13, 28, "EVENT_TITLE")]),
-("She will arrive at 1 AM and leave at 2 PM.", [(20, 23, "START_TIME"), (38, 41, "END_TIME")]),
-("The concert starts at 1 PM and ends at 10 PM.", [(22, 25, "START_TIME"), (39, 43, "END_TIME"), (5, 10, "EVENT_TITLE")]),
-("They have a lunch break from 10 PM to 1 PM.", [(30, 34, "START_TIME"), (39, 42, "END_TIME"), (13, 23, "EVENT_TITLE")]),
-("The movie starts at 9 PM, and the doors open at 1 PM.", [(48, 51, "START_TIME"), (20, 23, "END_TIME"), (5, 9, EVENT_TITLE)]),
-("She has a yoga class at 1 PM.", [(25, 28, "START_TIME"), (11, 20, "EVENT_TITLE")]),
-("He has a business trip from 1 AM to 2 PM.", [(29, 32, "START_TIME"), (37, 40, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("The workshop starts at 2 AM and ends at 6 PM.", [(20, 22, "START_TIME"), (35, 37, "END_TIME"), (4, 12, "EVENT_TITLE")]),
-("I have to cook at 1 PM.", [(19, 22, START_TIME), (11, 14, EVENT_TITLE)]),
-("She needs to study at 1 PM.", [(23, 26, "START_TIME"), (14, 18, "EVENT_TITLE")]),
-("We have to clean the house at 11 AM.", [(31, 35, "START_TIME"), (12, 26, "EVENT_TITLE")]),
-("They need to exercise at 1 AM.", [(26, 29, "START_TIME"), (14, 21, "EVENT_TITLE")]),
-("I have to call my friend at 1 PM.", [(29, 32, "START_TIME"), (11, 24, "EVENT_TITLE")]),
-("She needs to prepare for the presentation at 1 AM.", [(46, 49, "START_TIME"), (30, 41, "EVENT_TITLE")]),
-("We have to take the dog for a walk at 1 AM.", [(39, 42, "START_TIME"), (12, 34, "EVENT_TITLE")]),
-("They need to go grocery shopping at 2 PM.", [(37, 40, "START_TIME"), (14, 32, "EVENT_TITLE")]),
-("I have to submit the application by 6 PM.", [(37, 40, "END_TIME"), (11, 32, "EVENT_TITLE")]),
-("She needs to pick up the kids from school at 1 PM.", [(46, 49, "START_TIME"), (14, 29, "EVENT_TITLE")]),
-("He has to finish the project by tomorrow at 3 PM.", [(33, 48, "END_TIME"), (22, 28, "EVENT_TITLE")]),
-("The conference starts tomorrow morning and ends on Friday evening.", [(23, 38, "START_TIME"), (52, 65, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The exhibition starts next week and ends on Sunday.", [(23, 31, "START_TIME"), (45, 50, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The training program starts in two days and ends on Wednesday.", [(29, 39, "START_TIME"), (53, 61, "END_TIME"), (5, 20, "EVENT_TITLE")]),
-("The festival starts next month and ends on the 12nd.", [(21, 30, "START_TIME"), (41, 51, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The tournament starts tomorrow afternoon and ends on Sunday night.", [(23, 40, "START_TIME"), (51, 65, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The workshop starts next week and ends on Friday afternoon.", [(21, 29, "START_TIME"), (40, 58, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The conference starts in three days and ends on Sunday evening.", [(23, 35, "START_TIME"), (46, 62, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The seminar starts tomorrow morning and ends on Friday afternoon.", [(20, 35, "START_TIME"), (46, 64, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The exhibition starts next month and ends on the 21st.", [(23, 39, "START_TIME"), (50, 60, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The game event starts tomorrow and ends on Wednesday afternoon.", [(23, 30, "START_TIME"), (41, 62, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The sales ends at 1 PM.", [(19, 22, END_TIME), (5, 9, EVENT_TITLE)]),
-("The promotion ends at 2 PM.", [(23, 26, "END_TIME"), (6, 13, "EVENT_TITLE")]),
-("The auction ends at 3 PM.", [(21, 24, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The concert ends at 11 PM.", [(21, 25, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The exhibition ends at 4 PM.", [(24, 27, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The show ends at 5 PM.", [(18, 21, "END_TIME"), (5, 8, "EVENT_TITLE")]),
-("The seminar ends at 6 PM.", [(21, 24, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The conference ends at 7 PM.", [(23, 26, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The workshop ends at 8 PM.", [(22, 25, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The event ends at 9 PM.", [(19, 22, "END_TIME"), (5, 9, "EVENT_TITLE")]),
-("I will be in a coaching session from 1 PM to 2 PM.", [(38, 41, "START_TIME"), (46, 49, "END_TIME"), (16, 31, "EVENT_TITLE")]),
-("He has a guitar lesson at 6 PM.", [(27, 30, "START_TIME"), (10, 22, "EVENT_TITLE")]),
-("They have a swimming practice at 1 PM.", [(34, 37, "START_TIME"), (13, 29, "EVENT_TITLE")]),
-("She has a dance rehearsal at 1 PM.", [(30, 33, "START_TIME"), (11, 25, "EVENT_TITLE")]),
-("I have a piano class at 1 PM.", [(25, 28, "START_TIME"), (10, 20, "EVENT_TITLE")]),
-("She has a fitness training at 1 AM.", [(31, 34, "START_TIME"), (11, 26, "EVENT_TITLE")]),
-("We have a client meeting from 1 PM to 2 PM.", [(31, 26, "START_TIME"), (39, 42, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("Reminder for the interview at 10 AM.", [(31, 35, "START_TIME"), (18, 26, "EVENT_TITLE")]),
-("I need to finish my homework before 11:33 P.M.", [(37, 45, END_TIME), (21, 28, EVENT_TITLE)]),
-("I need to submit my report before 5:02 P.M.", [(35, 43, "END_TIME"), (21, 26, "EVENT_TITLE")]),
-("I have a meeting from 1 PM to 2 PM.", [(23, 26, "START_TIME"), (31, 34, "END_TIME"), (10, 16, EVENT_TITLE)]),
-("Reminder for the presentation at 10 AM.", [(34, 38, "START_TIME"), (18, 29, EVENT_TITLE)]),
-("I have a presentation from 2 AM to 11 PM.", [(28, 31, "START_TIME"), (36, 40, "END_TIME"), (10, 21, "EVENT_TITLE")]),
-("She has a doctor's appointment from 2 PM to 4 PM.", [(37, 40, "START_TIME"), (45, 48, "END_TIME"), (11, 30, "EVENT_TITLE")]),
-("We are attending a conference from 12 AM to 4 PM.", [(36, 40, "START_TIME"), (45, 48, "END_TIME"), (20, 29, "EVENT_TITLE")]),
-("He has a lunch meeting from 12 PM to 4 PM.", [(29, 33, "START_TIME"), (38, 41, "END_TIME"), (16, 22, "EVENT_TITLE")]),
-("They have a team building activity from 2 PM to 4 PM.", [(41, 44, "START_TIME"), (49, 52, "END_TIME"), (13, 34, "EVENT_TITLE")]),
-("I will be in a training session from 2 PM to 10 PM.", [(38, 41, "START_TIME"), (46, 50, "END_TIME"), (16, 31, "EVENT_TITLE")]),
-("She is attending a wedding ceremony from 2 PM to 4 PM.", [(42, 45, "START_TIME"), (50, 53, "END_TIME"), (20, 35, "EVENT_TITLE")]),
-("We have a client meeting from 11 AM to 12 PM.", [(31, 35, "START_TIME"), (40, 44, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("He has a business trip from 2 AM to 4 PM.", [(29, 32, "START_TIME"), (37, 40, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("They have a project deadline from 2 PM to 4 PM.", [(35, 38, "START_TIME"), (43, 46, "END_TIME"), (13, 28, "EVENT_TITLE")]),
-("She will arrive at 2 AM and leave at 4 PM.", [(20, 23, "START_TIME"), (38, 41, "END_TIME")]),
-("The concert starts at 2 PM and ends at 10 PM.", [(22, 25, "START_TIME"), (39, 43, "END_TIME"), (5, 10, "EVENT_TITLE")]),
-("They have a lunch break from 10 AM to 4 PM.", [(30, 34, "START_TIME"), (39, 42, "END_TIME"), (13, 23, "EVENT_TITLE")]),
-("The movie starts at 2 PM, and the doors open at 1 PM.", [(48, 51, "START_TIME"), (20, 23, "END_TIME"), (5, 9, EVENT_TITLE)]),
-("She has a yoga class at 4 AM.", [(25, 28, "START_TIME"), (11, 20, "EVENT_TITLE")]),
-("He has a business trip from 2 AM to 4 PM.", [(29, 32, "START_TIME"), (37, 40, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("The workshop starts at 2 AM and ends at 3 PM.", [(20, 22, "START_TIME"), (35, 37, "END_TIME"), (4, 12, "EVENT_TITLE")]),
-("I have to cook at 2 PM.", [(19, 22, START_TIME), (11, 14, EVENT_TITLE)]),
-("She needs to study at 3 AM.", [(23, 26, "START_TIME"), (14, 18, "EVENT_TITLE")]),
-("We have to clean the house at 12 AM.", [(31, 35, "START_TIME"), (12, 26, "EVENT_TITLE")]),
-("They need to exercise at 4 AM.", [(26, 29, "START_TIME"), (14, 21, "EVENT_TITLE")]),
-("I have to call my friend at 4 PM.", [(29, 32, "START_TIME"), (11, 24, "EVENT_TITLE")]),
-("She needs to prepare for the presentation at 4 AM.", [(46, 49, "START_TIME"), (30, 41, "EVENT_TITLE")]),
-("We have to take the dog for a walk at 5 PM.", [(39, 42, "START_TIME"), (12, 34, "EVENT_TITLE")]),
-("They need to go grocery shopping at 6 PM.", [(37, 40, "START_TIME"), (14, 32, "EVENT_TITLE")]),
-("I have to submit the application by 9 PM.", [(37, 40, "END_TIME"), (11, 32, "EVENT_TITLE")]),
-("She needs to pick up the kids from school at 3 PM.", [(46, 49, "START_TIME"), (14, 29, "EVENT_TITLE")]),
-("He has to finish the project by tomorrow at 5 PM.", [(33, 48, "END_TIME"), (22, 28, "EVENT_TITLE")]),
-("The conference starts tomorrow morning and ends on Monday evening.", [(23, 38, "START_TIME"), (52, 65, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The exhibition starts next week and ends on Monday.", [(23, 31, "START_TIME"), (45, 50, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The training program starts in one days and ends on Wednesday.", [(29, 39, "START_TIME"), (53, 61, "END_TIME"), (5, 20, "EVENT_TITLE")]),
-("The festival starts last month and ends on the 19th.", [(21, 30, "START_TIME"), (41, 51, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The tournament starts tomorrow afternoon and ends on Friday night.", [(23, 40, "START_TIME"), (51, 65, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The workshop starts next week and ends on Monday afternoon.", [(21, 29, "START_TIME"), (40, 58, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The conference starts in eight days and ends on Friday evening.", [(23, 35, "START_TIME"), (46, 62, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The seminar starts tomorrow morning and ends on Sunday afternoon.", [(20, 35, "START_TIME"), (46, 64, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The exhibition starts next month and ends on the 27th.", [(23, 39, "START_TIME"), (50, 60, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The game event starts tomorrow and ends on Thursday afternoon.", [(23, 30, "START_TIME"), (41, 58, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The sales ends at 2 PM.", [(19, 22, END_TIME), (5, 9, EVENT_TITLE)]),
-("The promotion ends at 5 PM.", [(23, 26, "END_TIME"), (6, 13, "EVENT_TITLE")]),
-("The auction ends at 2 PM.", [(21, 24, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The concert ends at 10 AM.", [(21, 25, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The exhibition ends at 3 PM.", [(24, 27, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The show ends at 5 PM.", [(18, 21, "END_TIME"), (5, 8, "EVENT_TITLE")]),
-("The seminar ends at 8 PM.", [(21, 24, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The conference ends at 7 PM.", [(23, 26, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The workshop ends at 9 PM.", [(22, 25, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The event ends at 4 PM.", [(19, 22, "END_TIME"), (5, 9, "EVENT_TITLE")]),
-("I will be in a coaching session from 1 AM to 1 PM.", [(38, 41, "START_TIME"), (46, 49, "END_TIME"), (16, 31, "EVENT_TITLE")]),
-("He has a guitar lesson at 9 PM.", [(27, 30, "START_TIME"), (10, 22, "EVENT_TITLE")]),
-("They have a swimming practice at 6 AM.", [(34, 37, "START_TIME"), (13, 29, "EVENT_TITLE")]),
-("She has a dance rehearsal at 4 PM.", [(30, 33, "START_TIME"), (11, 25, "EVENT_TITLE")]),
-("I have a piano class at 2 PM.", [(25, 28, "START_TIME"), (10, 20, "EVENT_TITLE")]),
-("She has a fitness training at 3 AM.", [(31, 34, "START_TIME"), (11, 26, "EVENT_TITLE")]),
-("We have a client meeting from 1 AM to 5 PM.", [(31, 26, "START_TIME"), (39, 42, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("Reminder for the interview at 10 PM.", [(31, 35, "START_TIME"), (18, 26, "EVENT_TITLE")]),
-("I need to finish my homework before 10:37 A.M.", [(37, 45, END_TIME), (21, 28, EVENT_TITLE)]),
-("I need to submit my report before 8:33 A.M.", [(35, 43, "END_TIME"), (21, 26, "EVENT_TITLE")]),
-("I need to complete the project before 6:26 P.M.", [(39, 47, "END_TIME"), (24, 30, "EVENT_TITLE")]),
-("I need to finish reading the book before 10:55 P.M.", [(42, 51, "END_TIME"), (18, 24, "EVENT_TITLE")]),
-("I need to prepare for the presentation before 6:22 A.M.", [(47, 55, "END_TIME"), (27, 38, "EVENT_TITLE")]),
-("I need to finalize the budget before 3:33 P.M.", [(38, 46, "END_TIME"), (11, 29, "EVENT_TITLE")]),
-("I need to complete the online course before 8:55 P.M.", [(45, 53, "END_TIME"), (24, 36, "EVENT_TITLE")]),
-("I need to finish writing the essay before 4:39 P.M.", [(43, 51, "END_TIME"), (18, 34, "EVENT_TITLE")]),
-("I need to study for the exam before 7:24 P.M.", [(37, 45, "END_TIME"), (11, 28, "EVENT_TITLE")]),
-("I need to finish the presentation slides before 2:36 P.M.", [(49, 57, "END_TIME"), (22, 33, "EVENT_TITLE")]),
-("I need to send the email before 1:21 P.M.", [(33, 41, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("I need to review the document before 9:19 A.M.", [(38, 46, "END_TIME"), (11, 29, "EVENT_TITLE")]),
-("I need to complete the survey before 8:17 A.M.", [(38, 46, "END_TIME"), (11, 29, "EVENT_TITLE")]),
-("I need to finish the task before 7:03 P.M.", [(34, 42, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("I need to analyze the data from 11:05 A.M. to 2:00 P.M.", [(33, 42, "START_TIME"), (47, 55, "END_TIME"), (11, 26, "EVENT_TITLE")]),
-("I need to review the financial reports from 9:09 A.M. to 11:22 A.M.", [(45, 53, "START_TIME"), (58, 67, "END_TIME"), (11, 38, "EVENT_TITLE")]),
-("I need to analyze the market trends from 1:06 P.M. to 4:28 P.M.", [(42, 50, "START_TIME"), (55, 63, "END_TIME"), (11, 35, "EVENT_TITLE")]),
-("I need to examine the research findings from 10:35 A.M. to 12:33 P.M.", [(46, 55, "START_TIME"), (60, 69, "END_TIME"), (11, 39, "EVENT_TITLE")]),
-("I need to analyze the customer feedback from 9:34 A.M. to 11:36 A.M.", [(46, 54, "START_TIME"), (59, 68, "END_TIME"), (11, 39, "EVENT_TITLE")]),
-("I need to process the data sets from 2:39 P.M. to 5:34 P.M.", [(38, ,46 "START_TIME"), (51, 59, "END_TIME"), (21, 36, "EVENT_TITLE")]),
-("I need to review the patient records from 10:55 A.M. to 12:09 P.M.", [(43, 52, "START_TIME"), (57, 66, "END_TIME"), (11, 36, "EVENT_TITLE")]),
-("He has a cooking workshop from 9:28 A.M. to 12:25 P.M.", [(32, 40, "START_TIME"), (45, 54, "END_TIME"), (10, 25, "EVENT_TITLE")]),
-("She has a painting class from 1:56 P.M. to 3:24 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("He has a coding workshop from 10:51 A.M. to 12:31 P.M.", [(31, 40, "START_TIME"), (45, 54, "END_TIME"), (10, 24, "EVENT_TITLE")]),
-("He has a photography workshop from 2:56 P.M. to 5:54 P.M.", [(36, 44, "START_TIME"), (49, 57, "END_TIME"), (10, 29, "EVENT_TITLE")]),
-("She has a music class from 11:15 A.M. to 1:51 P.M.", [(28, 37, "START_TIME"), (42, 50, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("She has a language course from 9:12 A.M. to 11:13 A.M.", [(32, 40, "START_TIME"), (45, 54, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("He has a cooking demonstration from 1:14 P.M. to 4:15 P.M.", [(37, 45, "START_TIME"), (50, 58, "END_TIME"), (10, 30, "EVENT_TITLE")]),
-("She has a dance practice from 2:16 P.M. to 4:17 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("He has a cooking class from 11:19 A.M. to 2:18 P.M.", [(29, 38, "START_TIME"), (43, 51, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("She has a chess class from 10:20 A.M. to 1:21 P.M.", [(28, 37, "START_TIME"), (42, 50, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("He has a tennis lesson from 6:23 P.M. to 8:22 P.M.", [(29, 37, "START_TIME"), (42, 50, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("I have to attend a business meeting from 9:55 A.M. to 11:23 A.M.", [(42, 50, "START_TIME"), (55, 64, "END_TIME"), (20, 35, "EVENT_TITLE")]),
-("I have to clean the house from 1:24 P.M. to 3:25 P.M.", [(32, 40, "START_TIME"), (45, 53, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("I have to pick up my kids from school from 3:26 P.M. to 5:27 P.M.", [(44, 52, "START_TIME"), (57, 65, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("I have to buy food at supermarket from 10:29 A.M. to 12:28 P.M.", [(40, 49, "START_TIME"), (54, 63, "END_TIME"), (11, 18, "EVENT_TITLE")]),
-("I have to go to the gym from 9:30 A.M. to 11:31 A.M.", [(30, 38, "START_TIME"), (43, 52, "END_TIME"), (11, 23, "EVENT_TITLE")]),
-("I have to run errands from 11:32 A.M. to 1:33 P.M.", [(28, 37, "START_TIME"), (42, 50, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("I have to meet a friend for lunch from 12:34 P.M. to 2:52 P.M.", [(40, 49, "START_TIME"), (54, 62, "END_TIME"), (11, 23, "EVENT_TITLE")]),
-("I have to do grocery shopping from 10:36 A.M. to 12:37 P.M.", [(36, 45, "START_TIME"), (50, 59, "END_TIME"), (22, 29, "EVENT_TITLE")]),
-("I have to go for a dental appointment from 3:38 P.M. to 5:39 P.M.", [(44, 52, "START_TIME"), (57, 65, "END_TIME"), (20, 37, "EVENT_TITLE")]),
-("I have to walk my dog from 5:40 P.M. to 7:12 P.M.", [(28, 36, "START_TIME"), (41, 49, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("I have to visit the library from 11:40 A.M. to 1:41 P.M.", [(34, 43, "START_TIME"), (48, 56, "END_TIME"), (11, 27, "EVENT_TITLE")]),
-("I have to do laundry from 10:42 A.M. to 12:43 P.M.", [(27, 36, "START_TIME"), (41, 50, "END_TIME"), (11, 20, "EVENT_TITLE")]),
-("I have to visit my grandparents from 3:44 P.M. to 5:45 P.M.", [(38, 46, "START_TIME"), (51, 59, "END_TIME"), (11, 31, "EVENT_TITLE")]),
-("I have to attend a webinar from 1:46 P.M. to 3:47 P.M.", [(33, 41, "START_TIME"), (46, 54, "END_TIME"), (11, 26, "EVENT_TITLE")]),
-("I have to go for a job interview from 10:48 A.M. to 12:49 P.M.", [(39, 48, "START_TIME"), (53, 62, "END_TIME"), (20, 32, "EVENT_TITLE")]),
-("I have to attend a parent-teacher meeting from 2:51 P.M. to 4:52 P.M.", [(48, 56, "START_TIME"), (61, 69, "END_TIME"), (20, 41, "EVENT_TITLE")]),
-("I have to take a nap from 3:53 P.M. to 5:54 P.M.", [(27, 35, "START_TIME"), (40, 48, "END_TIME"), (11, 20, "EVENT_TITLE")]),
-("I have to go for a jog from 8:55 A.M. to 10:56 A.M.", [(29, 37, "START_TIME"), (42, 51, "END_TIME"), (20, 22, "EVENT_TITLE")]),
-("I have to volunteer at the local shelter from 11:57 A.M. to 1:30 P.M.", [(47, 56, "START_TIME"), (61, 69, "END_TIME"), (11, 19, "EVENT_TITLE")]),
-("I have to go for a bike ride from 2:59 P.M. to 4:58 P.M.", [(35, 43, "START_TIME"), (48, 56, "END_TIME"), (20, 28, "EVENT_TITLE")]),
-("She has to go shopping from 11:01 A.M. to 2:02 P.M.", [(29, 38, "START_TIME"), (43, 51, "END_TIME"), (15, 22, "EVENT_TITLE")]),
-("She has to go to the bank from 1:02 P.M. to 4:03 P.M.", [(32, 40, "START_TIME"), (45, 53, "END_TIME"), (12, 25, "EVENT_TITLE")]),
-("He has to go for a haircut from 10:04 A.M. to 12:35 P.M.", [(33, 42, "START_TIME"), (47, 56, "END_TIME"), (20, 26, "EVENT_TITLE")]),
-("He has to meet with his advisor from 3:36 P.M. to 6:04 P.M.", [(38, 46, "START_TIME"), (51, 59, "END_TIME"), (11, 31, "EVENT_TITLE")]),
-("She has to have a meeting with colleagues from 12:39 P.M. to 3:05 P.M.", [(48, 57, "START_TIME"), (62, 70, "END_TIME"), (19, 25, "EVENT_TITLE")]),
-("She has to go to the post office from 1:18 P.M. to 4:35 P.M.", [(39, 47, "START_TIME"), (52, 60, "END_TIME"), (12, 32, "EVENT_TITLE")]),
-("She has to meet a colleague for lunch from 12:16 P.M. to 3:24 P.M.", [(43, 52, "START_TIME"), (57, 65, "END_TIME"), (11, 26, "EVENT_TITLE")]),
-("He has to meet with his supervisor from 3:28 P.M. to 6:48 P.M.", [(41, 49, "START_TIME"), (54, 62, "END_TIME"), (11, 34, "EVENT_TITLE")]),
-("She has to take a shower from 2:19 P.M. to 5:16 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (12, 24, "EVENT_TITLE")]),
-("She has to pick up groceries from 11:20 A.M. to 1:30 P.M.", [(35, 44, "START_TIME"), (49, 57, "END_TIME"), (12, 28, "EVENT_TITLE")]),
-("She has to go for a workout from 4:20 P.M. to 6:54 P.M.", [(34, 42, "START_TIME"), (47, 55, "END_TIME"), (21, 27, "EVENT_TITLE")]),
-("She has to take a break from work from 3:31 P.M. to 5:32 P.M.", [(40, 48, "START_TIME"), (53, 61, "END_TIME"), (12, 23, "EVENT_TITLE")]),
-("I want to play games from 2:16 P.M. to 4:19 P.M.", [(27, 35, "START_TIME"), (40, 48, "END_TIME"), (11, 20, "EVENT_TITLE")]),
-("She want to eat dinner with clients from 2:13 P.M. to 4:17 P.M.", [(42, 50, "START_TIME"), (55, 63, "END_TIME"), (13, 35, "EVENT_TITLE")]),
-("I have to do my homework from 2:59 P.M. to 4:06 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("I have to prepare for midterm test from 2:24 P.M. to 4:26 P.M.", [(41, 49, "START_TIME"), (54, 62, "END_TIME"), (11, 34, "EVENT_TITLE")]),
-("I have to complete the task before 4:18 P.M.", [(36, 44, "END_TIME"), (11, 27, "EVENT_TITLE")]),
-("I have to relax after 4:19 P.M.", [(23, 31, "START_TIME"), (11, 15, "EVENT_TITLE")]),
-("I have to sleep before 4:20 P.M.", [(24, 32, "END_TIME"), (11, 15, "EVENT_TITLE")]),
-("I need to finish the task in 7 hours.", [(35, 43, "DURATION"), (11, 29, "EVENT_TITLE")]),
-("I have a meeting from 5 PM to 6 PM.", [(23, 26, "START_TIME"), (31, 34, "END_TIME"), (10, 16, EVENT_TITLE)]),
-("Reminder for the presentation at 10 AM.", [(34, 38, "START_TIME"), (18, 29, EVENT_TITLE)]),
-("I have a presentation from 5 AM to 12 AM.", [(28, 31, "START_TIME"), (36, 40, "END_TIME"), (10, 21, "EVENT_TITLE")]),
-("She has a doctor's appointment from 5 PM to 6 PM.", [(37, 40, "START_TIME"), (45, 48, "END_TIME"), (11, 30, "EVENT_TITLE")]),
-("We are attending a conference from 12 AM to 6 PM.", [(36, 40, "START_TIME"), (45, 48, "END_TIME"), (20, 29, "EVENT_TITLE")]),
-("He has a lunch meeting from 10 PM to 6 PM.", [(29, 33, "START_TIME"), (38, 41, "END_TIME"), (16, 22, "EVENT_TITLE")]),
-("They have a team building activity from 5 PM to 6 PM.", [(41, 44, "START_TIME"), (49, 52, "END_TIME"), (13, 34, "EVENT_TITLE")]),
-("I will be in a training session from 5 AM to 11 PM.", [(38, 41, "START_TIME"), (46, 50, "END_TIME"), (16, 31, "EVENT_TITLE")]),
-("She is attending a wedding ceremony from 5 PM to 7 PM.", [(42, 45, "START_TIME"), (50, 53, "END_TIME"), (20, 35, "EVENT_TITLE")]),
-("We have a client meeting from 11 AM to 12 AM.", [(31, 35, "START_TIME"), (40, 44, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("He has a business trip from 5 AM to 6 PM.", [(29, 32, "START_TIME"), (37, 40, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("They have a project deadline from 5 PM to 7 PM.", [(35, 38, "START_TIME"), (43, 46, "END_TIME"), (13, 28, "EVENT_TITLE")]),
-("She will arrive at 5 AM and leave at 7 PM.", [(20, 23, "START_TIME"), (38, 41, "END_TIME")]),
-("The concert starts at 5 PM and ends at 10 PM.", [(22, 25, "START_TIME"), (39, 43, "END_TIME"), (5, 10, "EVENT_TITLE")]),
-("They have a lunch break from 10 PM to 6 PM.", [(30, 34, "START_TIME"), (39, 42, "END_TIME"), (13, 23, "EVENT_TITLE")]),
-("The movie starts at 6 PM, and the doors open at 5 PM.", [(48, 51, "START_TIME"), (20, 23, "END_TIME"), (5, 9, EVENT_TITLE)]),
-("She has a yoga class at 4 PM.", [(25, 28, "START_TIME"), (11, 20, "EVENT_TITLE")]),
-("He has a business trip from 5 AM to 6 PM.", [(29, 32, "START_TIME"), (37, 40, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("The workshop starts at 5 AM and ends at 6 PM.", [(20, 22, "START_TIME"), (35, 37, "END_TIME"), (4, 12, "EVENT_TITLE")]),
-("I have to cook at 3 PM.", [(19, 22, START_TIME), (11, 14, EVENT_TITLE)]),
-("She needs to study at 5 PM.", [(23, 26, "START_TIME"), (14, 18, "EVENT_TITLE")]),
-("We have to clean the house at 11 AM.", [(31, 35, "START_TIME"), (12, 26, "EVENT_TITLE")]),
-("They need to exercise at 3 AM.", [(26, 29, "START_TIME"), (14, 21, "EVENT_TITLE")]),
-("I have to call my friend at 9 PM.", [(29, 32, "START_TIME"), (11, 24, "EVENT_TITLE")]),
-("She needs to prepare for the presentation at 8 AM.", [(46, 49, "START_TIME"), (30, 41, "EVENT_TITLE")]),
-("We have to take the dog for a walk at 7 AM.", [(39, 42, "START_TIME"), (12, 34, "EVENT_TITLE")]),
-("They need to go grocery shopping at 6 PM.", [(37, 40, "START_TIME"), (14, 32, "EVENT_TITLE")]),
-("I have to submit the application by 3 PM.", [(37, 40, "END_TIME"), (11, 32, "EVENT_TITLE")]),
-("She needs to pick up the kids from school at 5 PM.", [(46, 49, "START_TIME"), (14, 29, "EVENT_TITLE")]),
-("He has to finish the project by tomorrow at 2 PM.", [(33, 48, "END_TIME"), (22, 28, "EVENT_TITLE")]),
-("The conference starts tomorrow morning and ends on Friday evening.", [(23, 38, "START_TIME"), (52, 65, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The exhibition starts next week and ends on Sunday.", [(23, 31, "START_TIME"), (45, 50, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The training program starts in two days and ends on Wednesday.", [(29, 39, "START_TIME"), (53, 61, "END_TIME"), (5, 20, "EVENT_TITLE")]),
-("The festival starts next month and ends on the 09th.", [(21, 30, "START_TIME"), (41, 51, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The tournament starts tomorrow afternoon and ends on Sunday night.", [(23, 40, "START_TIME"), (51, 65, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The workshop starts next week and ends on Friday afternoon.", [(21, 29, "START_TIME"), (40, 58, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The conference starts in three days and ends on Sunday evening.", [(23, 35, "START_TIME"), (46, 62, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The seminar starts tomorrow morning and ends on Friday afternoon.", [(20, 35, "START_TIME"), (46, 64, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The exhibition starts next month and ends on the 05th.", [(23, 39, "START_TIME"), (50, 60, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The game event starts tomorrow and ends on Wednesday afternoon.", [(23, 30, "START_TIME"), (41, 62, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The sales ends at 9 PM.", [(19, 22, END_TIME), (5, 9, EVENT_TITLE)]),
-("The promotion ends at 7 PM.", [(23, 26, "END_TIME"), (6, 13, "EVENT_TITLE")]),
-("The auction ends at 8 PM.", [(21, 24, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The concert ends at 12 PM.", [(21, 25, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The exhibition ends at 6 PM.", [(24, 27, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The show ends at 5 PM.", [(18, 21, "END_TIME"), (5, 8, "EVENT_TITLE")]),
-("The seminar ends at 3 PM.", [(21, 24, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The conference ends at 4 PM.", [(23, 26, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The workshop ends at 5 PM.", [(22, 25, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The event ends at 3 PM.", [(19, 22, "END_TIME"), (5, 9, "EVENT_TITLE")]),
-("I will be in a coaching session from 5 PM to 6 PM.", [(38, 41, "START_TIME"), (46, 49, "END_TIME"), (16, 31, "EVENT_TITLE")]),
-("He has a guitar lesson at 5 PM.", [(27, 30, "START_TIME"), (10, 22, "EVENT_TITLE")]),
-("They have a swimming practice at 4 PM.", [(34, 37, "START_TIME"), (13, 29, "EVENT_TITLE")]),
-("She has a dance rehearsal at 5 PM.", [(30, 33, "START_TIME"), (11, 25, "EVENT_TITLE")]),
-("I have a piano class at 5 PM.", [(25, 28, "START_TIME"), (10, 20, "EVENT_TITLE")]),
-("She has a fitness training at 5 AM.", [(31, 34, "START_TIME"), (11, 26, "EVENT_TITLE")]),
-("We have a client meeting from 5 PM to 6 PM.", [(31, 26, "START_TIME"), (39, 42, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("Reminder for the interview at 12 AM.", [(31, 35, "START_TIME"), (18, 26, "EVENT_TITLE")]),
-("I need to finish my homework before 11:11 P.M.", [(37, 45, END_TIME), (21, 28, EVENT_TITLE)]),
-("I need to submit my report before 5:22 P.M.", [(35, 43, "END_TIME"), (21, 26, "EVENT_TITLE")]),
-("I have a meeting from 7 PM to 8 PM.", [(23, 26, "START_TIME"), (31, 34, "END_TIME"), (10, 16, EVENT_TITLE)]),
-("Reminder for the presentation at 11 AM.", [(34, 38, "START_TIME"), (18, 29, EVENT_TITLE)]),
-("I have a presentation from 8 AM to 11 PM.", [(28, 31, "START_TIME"), (36, 40, "END_TIME"), (10, 21, "EVENT_TITLE")]),
-("She has a doctor's appointment from 7 PM to 8 PM.", [(37, 40, "START_TIME"), (45, 48, "END_TIME"), (11, 30, "EVENT_TITLE")]),
-("We are attending a conference from 10 AM to 7 PM.", [(36, 40, "START_TIME"), (45, 48, "END_TIME"), (20, 29, "EVENT_TITLE")]),
-("He has a lunch meeting from 12 PM to 7 PM.", [(29, 33, "START_TIME"), (38, 41, "END_TIME"), (16, 22, "EVENT_TITLE")]),
-("They have a team building activity from 7 PM to 8 PM.", [(41, 44, "START_TIME"), (49, 52, "END_TIME"), (13, 34, "EVENT_TITLE")]),
-("I will be in a training session from 7 AM to 11 PM.", [(38, 41, "START_TIME"), (46, 50, "END_TIME"), (16, 31, "EVENT_TITLE")]),
-("She is attending a wedding ceremony from 7 PM to 9 PM.", [(42, 45, "START_TIME"), (50, 53, "END_TIME"), (20, 35, "EVENT_TITLE")]),
-("We have a client meeting from 10 AM to 12 AM.", [(31, 35, "START_TIME"), (40, 44, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("He has a business trip from 8 AM to 9 PM.", [(29, 32, "START_TIME"), (37, 40, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("They have a project deadline from 7 PM to 8 PM.", [(35, 38, "START_TIME"), (43, 46, "END_TIME"), (13, 28, "EVENT_TITLE")]),
-("She will arrive at 7 AM and leave at 8 PM.", [(20, 23, "START_TIME"), (38, 41, "END_TIME")]),
-("The concert starts at 7 PM and ends at 12 PM.", [(22, 25, "START_TIME"), (39, 43, "END_TIME"), (5, 10, "EVENT_TITLE")]),
-("They have a lunch break from 10 AM to 8 PM.", [(30, 34, "START_TIME"), (39, 42, "END_TIME"), (13, 23, "EVENT_TITLE")]),
-("The movie starts at 7 PM, and the doors open at 8 PM.", [(48, 51, "START_TIME"), (20, 23, "END_TIME"), (5, 9, EVENT_TITLE)]),
-("She has a yoga class at 4 AM.", [(25, 28, "START_TIME"), (11, 20, "EVENT_TITLE")]),
-("He has a business trip from 7 AM to 8 PM.", [(29, 32, "START_TIME"), (37, 40, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("The workshop starts at 7 AM and ends at 8 PM.", [(20, 22, "START_TIME"), (35, 37, "END_TIME"), (4, 12, "EVENT_TITLE")]),
-("I have to cook at 4 PM.", [(19, 22, START_TIME), (11, 14, EVENT_TITLE)]),
-("She needs to study at 7 AM.", [(23, 26, "START_TIME"), (14, 18, "EVENT_TITLE")]),
-("We have to clean the house at 10 AM.", [(31, 35, "START_TIME"), (12, 26, "EVENT_TITLE")]),
-("They need to exercise at 7 AM.", [(26, 29, "START_TIME"), (14, 21, "EVENT_TITLE")]),
-("I have to call my friend at 7 PM.", [(29, 32, "START_TIME"), (11, 24, "EVENT_TITLE")]),
-("She needs to prepare for the presentation at 7 AM.", [(46, 49, "START_TIME"), (30, 41, "EVENT_TITLE")]),
-("We have to take the dog for a walk at 7 PM.", [(39, 42, "START_TIME"), (12, 34, "EVENT_TITLE")]),
-("They need to go grocery shopping at 7 PM.", [(37, 40, "START_TIME"), (14, 32, "EVENT_TITLE")]),
-("I have to submit the application by 7 PM.", [(37, 40, "END_TIME"), (11, 32, "EVENT_TITLE")]),
-("She needs to pick up the kids from school at 7 PM.", [(46, 49, "START_TIME"), (14, 29, "EVENT_TITLE")]),
-("He has to finish the project by tomorrow at 7 PM.", [(33, 48, "END_TIME"), (22, 28, "EVENT_TITLE")]),
-("The conference starts tomorrow morning and ends on Monday evening.", [(23, 38, "START_TIME"), (52, 65, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The exhibition starts next week and ends on Monday.", [(23, 31, "START_TIME"), (45, 50, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The training program starts in one days and ends on Wednesday.", [(29, 39, "START_TIME"), (53, 61, "END_TIME"), (5, 20, "EVENT_TITLE")]),
-("The festival starts last month and ends on the 13th.", [(21, 30, "START_TIME"), (41, 51, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The tournament starts tomorrow afternoon and ends on Friday night.", [(23, 40, "START_TIME"), (51, 65, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The workshop starts next week and ends on Monday afternoon.", [(21, 29, "START_TIME"), (40, 58, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The conference starts in three days and ends on Friday evening.", [(23, 35, "START_TIME"), (46, 62, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The seminar starts tomorrow morning and ends on Sunday afternoon.", [(20, 35, "START_TIME"), (46, 64, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The exhibition starts next month and ends on the 24th.", [(23, 39, "START_TIME"), (50, 60, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The game event starts tomorrow and ends on Thursday afternoon.", [(23, 30, "START_TIME"), (41, 58, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The sales ends at 7 PM.", [(19, 22, END_TIME), (5, 9, EVENT_TITLE)]),
-("The promotion ends at 8 PM.", [(23, 26, "END_TIME"), (6, 13, "EVENT_TITLE")]),
-("The auction ends at 7 PM.", [(21, 24, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The concert ends at 10 AM.", [(21, 25, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The exhibition ends at 7 PM.", [(24, 27, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The show ends at 7 PM.", [(18, 21, "END_TIME"), (5, 8, "EVENT_TITLE")]),
-("The seminar ends at 7 PM.", [(21, 24, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The conference ends at 7 PM.", [(23, 26, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The workshop ends at 8 PM.", [(22, 25, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The event ends at 7 PM.", [(19, 22, "END_TIME"), (5, 9, "EVENT_TITLE")]),
-("I will be in a coaching session from 7 AM to 2 PM.", [(38, 41, "START_TIME"), (46, 49, "END_TIME"), (16, 31, "EVENT_TITLE")]),
-("He has a guitar lesson at 5 PM.", [(27, 30, "START_TIME"), (10, 22, "EVENT_TITLE")]),
-("They have a swimming practice at 9 AM.", [(34, 37, "START_TIME"), (13, 29, "EVENT_TITLE")]),
-("She has a dance rehearsal at 2 PM.", [(30, 33, "START_TIME"), (11, 25, "EVENT_TITLE")]),
-("I have a piano class at 7 PM.", [(25, 28, "START_TIME"), (10, 20, "EVENT_TITLE")]),
-("She has a fitness training at 3 AM.", [(31, 34, "START_TIME"), (11, 26, "EVENT_TITLE")]),
-("We have a client meeting from 4 AM to 8 PM.", [(31, 26, "START_TIME"), (39, 42, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("Reminder for the interview at 10 PM.", [(31, 35, "START_TIME"), (18, 26, "EVENT_TITLE")]),
-("I need to finish my homework before 10:30 A.M.", [(37, 45, END_TIME), (21, 28, EVENT_TITLE)]),
-("I need to submit my report before 6:34 A.M.", [(35, 43, "END_TIME"), (21, 26, "EVENT_TITLE")]),
-("I need to complete the project before 1:30 P.M.", [(39, 47, "END_TIME"), (24, 30, "EVENT_TITLE")]),
-("I need to finish reading the book before 10:00 P.M.", [(42, 51, "END_TIME"), (18, 24, "EVENT_TITLE")]),
-("I need to prepare for the presentation before 3:00 A.M.", [(47, 55, "END_TIME"), (27, 38, "EVENT_TITLE")]),
-("I need to finalize the budget before 4:00 P.M.", [(38, 46, "END_TIME"), (11, 29, "EVENT_TITLE")]),
-("I need to complete the online course before 5:00 P.M.", [(45, 53, "END_TIME"), (24, 36, "EVENT_TITLE")]),
-("I need to finish writing the essay before 6:30 P.M.", [(43, 51, "END_TIME"), (18, 34, "EVENT_TITLE")]),
-("I need to study for the exam before 8:00 P.M.", [(37, 45, "END_TIME"), (11, 28, "EVENT_TITLE")]),
-("I need to finish the presentation slides before 3:00 P.M.", [(49, 57, "END_TIME"), (22, 33, "EVENT_TITLE")]),
-("I need to send the email before 9:30 P.M.", [(33, 41, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("I need to review the document before 2:55 A.M.", [(38, 46, "END_TIME"), (11, 29, "EVENT_TITLE")]),
-("I need to complete the survey before 8:59 A.M.", [(38, 46, "END_TIME"), (11, 29, "EVENT_TITLE")]),
-("I need to finish the task before 7:34 P.M.", [(34, 42, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("I need to analyze the data from 11:34 A.M. to 2:00 P.M.", [(33, 42, "START_TIME"), (47, 55, "END_TIME"), (11, 26, "EVENT_TITLE")]),
-("I need to review the financial reports from 9:12 A.M. to 11:00 A.M.", [(45, 53, "START_TIME"), (58, 67, "END_TIME"), (11, 38, "EVENT_TITLE")]),
-("I need to analyze the market trends from 1:22 P.M. to 4:00 P.M.", [(42, 50, "START_TIME"), (55, 63, "END_TIME"), (11, 35, "EVENT_TITLE")]),
-("I need to examine the research findings from 10:33 A.M. to 12:30 P.M.", [(46, 55, "START_TIME"), (60, 69, "END_TIME"), (11, 39, "EVENT_TITLE")]),
-("I need to analyze the customer feedback from 9:44 A.M. to 11:30 A.M.", [(46, 54, "START_TIME"), (59, 68, "END_TIME"), (11, 39, "EVENT_TITLE")]),
-("I need to process the data sets from 2:30 P.M. to 5:55 P.M.", [(38, ,46 "START_TIME"), (51, 59, "END_TIME"), (21, 36, "EVENT_TITLE")]),
-("I need to review the patient records from 10:00 A.M. to 12:44 P.M.", [(43, 52, "START_TIME"), (57, 66, "END_TIME"), (11, 36, "EVENT_TITLE")]),
-("He has a cooking workshop from 9:30 A.M. to 12:36 P.M.", [(32, 40, "START_TIME"), (45, 54, "END_TIME"), (10, 25, "EVENT_TITLE")]),
-("She has a painting class from 1:12 P.M. to 3:30 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("He has a coding workshop from 10:12 A.M. to 12:30 P.M.", [(31, 40, "START_TIME"), (45, 54, "END_TIME"), (10, 24, "EVENT_TITLE")]),
-("He has a photography workshop from 2:12 P.M. to 5:00 P.M.", [(36, 44, "START_TIME"), (49, 57, "END_TIME"), (10, 29, "EVENT_TITLE")]),
-("She has a music class from 11:00 A.M. to 1:31 P.M.", [(28, 37, "START_TIME"), (42, 50, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("She has a language course from 9:12 A.M. to 11:30 A.M.", [(32, 40, "START_TIME"), (45, 54, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("He has a cooking demonstration from 1:12 P.M. to 4:00 P.M.", [(37, 45, "START_TIME"), (50, 58, "END_TIME"), (10, 30, "EVENT_TITLE")]),
-("She has a dance practice from 2:12 P.M. to 4:30 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("He has a cooking class from 11:12 A.M. to 2:00 P.M.", [(29, 38, "START_TIME"), (43, 51, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("She has a chess class from 10:12 A.M. to 1:00 P.M.", [(28, 37, "START_TIME"), (42, 50, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("He has a tennis lesson from 6:12 P.M. to 8:30 P.M.", [(29, 37, "START_TIME"), (42, 50, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("I have to attend a business meeting from 9:12 A.M. to 11:00 A.M.", [(42, 50, "START_TIME"), (55, 64, "END_TIME"), (20, 35, "EVENT_TITLE")]),
-("I have to clean the house from 1:00 P.M. to 3:12 P.M.", [(32, 40, "START_TIME"), (45, 53, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("I have to pick up my kids from school from 3:13 P.M. to 5:30 P.M.", [(44, 52, "START_TIME"), (57, 65, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("I have to buy food at supermarket from 10:13 A.M. to 12:30 P.M.", [(40, 49, "START_TIME"), (54, 63, "END_TIME"), (11, 18, "EVENT_TITLE")]),
-("I have to go to the gym from 9:30 A.M. to 11:13 A.M.", [(30, 38, "START_TIME"), (43, 52, "END_TIME"), (11, 23, "EVENT_TITLE")]),
-("I have to run errands from 11:00 A.M. to 1:13 P.M.", [(28, 37, "START_TIME"), (42, 50, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("I have to meet a friend for lunch from 12:13 P.M. to 2:30 P.M.", [(40, 49, "START_TIME"), (54, 62, "END_TIME"), (11, 23, "EVENT_TITLE")]),
-("I have to do grocery shopping from 10:13 A.M. to 12:30 P.M.", [(36, 45, "START_TIME"), (50, 59, "END_TIME"), (22, 29, "EVENT_TITLE")]),
-("I have to go for a dental appointment from 3:13 P.M. to 5:00 P.M.", [(44, 52, "START_TIME"), (57, 65, "END_TIME"), (20, 37, "EVENT_TITLE")]),
-("I have to walk my dog from 5:30 P.M. to 7:13 P.M.", [(28, 36, "START_TIME"), (41, 49, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("I have to visit the library from 11:30 A.M. to 1:13 P.M.", [(34, 43, "START_TIME"), (48, 56, "END_TIME"), (11, 27, "EVENT_TITLE")]),
-("I have to do laundry from 10:00 A.M. to 12:13 P.M.", [(27, 36, "START_TIME"), (41, 50, "END_TIME"), (11, 20, "EVENT_TITLE")]),
-("I have to visit my grandparents from 3:00 P.M. to 5:13 P.M.", [(38, 46, "START_TIME"), (51, 59, "END_TIME"), (11, 31, "EVENT_TITLE")]),
-("I have to attend a webinar from 1:30 P.M. to 3:13 P.M.", [(33, 41, "START_TIME"), (46, 54, "END_TIME"), (11, 26, "EVENT_TITLE")]),
-("I have to go for a job interview from 10:00 A.M. to 12:13 P.M.", [(39, 48, "START_TIME"), (53, 62, "END_TIME"), (20, 32, "EVENT_TITLE")]),
-("I have to attend a parent-teacher meeting from 2:13 P.M. to 4:00 P.M.", [(48, 56, "START_TIME"), (61, 69, "END_TIME"), (20, 41, "EVENT_TITLE")]),
-("I have to take a nap from 3:30 P.M. to 5:26 P.M.", [(27, 35, "START_TIME"), (40, 48, "END_TIME"), (11, 20, "EVENT_TITLE")]),
-("I have to go for a jog from 8:30 A.M. to 10:26 A.M.", [(29, 37, "START_TIME"), (42, 51, "END_TIME"), (20, 22, "EVENT_TITLE")]),
-("I have to volunteer at the local shelter from 11:24 A.M. to 1:30 P.M.", [(47, 56, "START_TIME"), (61, 69, "END_TIME"), (11, 19, "EVENT_TITLE")]),
-("I have to go for a bike ride from 2:30 P.M. to 4:24 P.M.", [(35, 43, "START_TIME"), (48, 56, "END_TIME"), (20, 28, "EVENT_TITLE")]),
-("She has to go shopping from 11:24 A.M. to 2:24 P.M.", [(29, 38, "START_TIME"), (43, 51, "END_TIME"), (15, 22, "EVENT_TITLE")]),
-("She has to go to the bank from 1:30 P.M. to 4:24 P.M.", [(32, 40, "START_TIME"), (45, 53, "END_TIME"), (12, 25, "EVENT_TITLE")]),
-("He has to go for a haircut from 10:00 A.M. to 12:24 P.M.", [(33, 42, "START_TIME"), (47, 56, "END_TIME"), (20, 26, "EVENT_TITLE")]),
-("He has to meet with his advisor from 3:30 P.M. to 6:24 P.M.", [(38, 46, "START_TIME"), (51, 59, "END_TIME"), (11, 31, "EVENT_TITLE")]),
-("She has to have a meeting with colleagues from 12:37 P.M. to 3:00 P.M.", [(48, 57, "START_TIME"), (62, 70, "END_TIME"), (19, 25, "EVENT_TITLE")]),
-("She has to go to the post office from 1:30 P.M. to 4:37 P.M.", [(39, 47, "START_TIME"), (52, 60, "END_TIME"), (12, 32, "EVENT_TITLE")]),
-("She has to meet a colleague for lunch from 12:30 P.M. to 3:37 P.M.", [(43, 52, "START_TIME"), (57, 65, "END_TIME"), (11, 26, "EVENT_TITLE")]),
-("He has to meet with his supervisor from 3:30 P.M. to 6:39 P.M.", [(41, 49, "START_TIME"), (54, 62, "END_TIME"), (11, 34, "EVENT_TITLE")]),
-("She has to take a shower from 2:30 P.M. to 5:39 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (12, 24, "EVENT_TITLE")]),
-("She has to pick up groceries from 11:00 A.M. to 1:39 P.M.", [(35, 44, "START_TIME"), (49, 57, "END_TIME"), (12, 28, "EVENT_TITLE")]),
-("She has to go for a workout from 4:00 P.M. to 6:34 P.M.", [(34, 42, "START_TIME"), (47, 55, "END_TIME"), (21, 27, "EVENT_TITLE")]),
-("She has to take a break from work from 3:44 P.M. to 5:30 P.M.", [(40, 48, "START_TIME"), (53, 61, "END_TIME"), (12, 23, "EVENT_TITLE")]),
-("I want to play games from 2:00 P.M. to 4:44 P.M.", [(27, 35, "START_TIME"), (40, 48, "END_TIME"), (11, 20, "EVENT_TITLE")]),
-("She want to eat dinner with clients from 2:44 P.M. to 4:30 P.M.", [(42, 50, "START_TIME"), (55, 63, "END_TIME"), (13, 35, "EVENT_TITLE")]),
-("I have to do my homework from 2:00 P.M. to 4:44 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("I have to prepare for midterm test from 2:44 P.M. to 4:30 P.M.", [(41, 49, "START_TIME"), (54, 62, "END_TIME"), (11, 34, "EVENT_TITLE")]),
-("I have to complete the task before 4:44 P.M.", [(36, 44, "END_TIME"), (11, 27, "EVENT_TITLE")]),
-("I have to relax after 4:13 P.M.", [(23, 31, "START_TIME"), (11, 15, "EVENT_TITLE")]),
-("I have to sleep before 4:19 P.M.", [(24, 32, "END_TIME"), (11, 15, "EVENT_TITLE")]),
-("I need to finish the task in 9 hours.", [(35, 43, "DURATION"), (11, 29, "EVENT_TITLE")]),
-("I have a meeting from 3 PM to 7 AM.", [(23, 26, "START_TIME"), (31, 34, "END_TIME"), (10, 16, EVENT_TITLE)]),
-("Reminder for the presentation at 7 AM.", [(34, 38, "START_TIME"), (18, 29, EVENT_TITLE)]),
-("I have a presentation from 3 AM to 12 AM.", [(28, 31, "START_TIME"), (36, 40, "END_TIME"), (10, 21, "EVENT_TITLE")]),
-("She has a doctor's appointment from 3 PM to 7 PM.", [(37, 40, "START_TIME"), (45, 48, "END_TIME"), (11, 30, "EVENT_TITLE")]),
-("We are attending a conference from 11 AM to 7 PM.", [(36, 40, "START_TIME"), (45, 48, "END_TIME"), (20, 29, "EVENT_TITLE")]),
-("He has a lunch meeting from 12 PM to 7 PM.", [(29, 33, "START_TIME"), (38, 41, "END_TIME"), (16, 22, "EVENT_TITLE")]),
-("They have a team building activity from 3 PM to 7 PM.", [(41, 44, "START_TIME"), (49, 52, "END_TIME"), (13, 34, "EVENT_TITLE")]),
-("I will be in a training session from 3 AM to 10 PM.", [(38, 41, "START_TIME"), (46, 50, "END_TIME"), (16, 31, "EVENT_TITLE")]),
-("She is attending a wedding ceremony from 3 PM to 7 PM.", [(42, 45, "START_TIME"), (50, 53, "END_TIME"), (20, 35, "EVENT_TITLE")]),
-("We have a client meeting from 11 AM to 11 PM.", [(31, 35, "START_TIME"), (40, 44, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("He has a business trip from 3 AM to 7 PM.", [(29, 32, "START_TIME"), (37, 40, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("They have a project deadline from 3 PM to 7 PM.", [(35, 38, "START_TIME"), (43, 46, "END_TIME"), (13, 28, "EVENT_TITLE")]),
-("She will arrive at 3 AM and leave at 7 PM.", [(20, 23, "START_TIME"), (38, 41, "END_TIME")]),
-("The concert starts at 3 PM and ends at 11 PM.", [(22, 25, "START_TIME"), (39, 43, "END_TIME"), (5, 10, "EVENT_TITLE")]),
-("They have a lunch break from 3 PM to 7 PM.", [(30, 34, "START_TIME"), (39, 42, "END_TIME"), (13, 23, "EVENT_TITLE")]),
-("The movie starts at 3 PM, and the doors open at 1 PM.", [(48, 51, "START_TIME"), (20, 23, "END_TIME"), (5, 9, EVENT_TITLE)]),
-("She has a yoga class at 3 PM.", [(25, 28, "START_TIME"), (11, 20, "EVENT_TITLE")]),
-("He has a business trip from 3 AM to 7 PM.", [(29, 32, "START_TIME"), (37, 40, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("The workshop starts at 3 AM and ends at 7 PM.", [(20, 22, "START_TIME"), (35, 37, "END_TIME"), (4, 12, "EVENT_TITLE")]),
-("I have to cook at 7 PM.", [(19, 22, START_TIME), (11, 14, EVENT_TITLE)]),
-("She needs to study at 3 PM.", [(23, 26, "START_TIME"), (14, 18, "EVENT_TITLE")]),
-("We have to clean the house at 12 AM.", [(31, 35, "START_TIME"), (12, 26, "EVENT_TITLE")]),
-("They need to exercise at 7 AM.", [(26, 29, "START_TIME"), (14, 21, "EVENT_TITLE")]),
-("I have to call my friend at 7 PM.", [(29, 32, "START_TIME"), (11, 24, "EVENT_TITLE")]),
-("She needs to prepare for the presentation at 7 AM.", [(46, 49, "START_TIME"), (30, 41, "EVENT_TITLE")]),
-("We have to take the dog for a walk at 7 AM.", [(39, 42, "START_TIME"), (12, 34, "EVENT_TITLE")]),
-("They need to go grocery shopping at 7 PM.", [(37, 40, "START_TIME"), (14, 32, "EVENT_TITLE")]),
-("I have to submit the application by 7 PM.", [(37, 40, "END_TIME"), (11, 32, "EVENT_TITLE")]),
-("She needs to pick up the kids from school at 7 PM.", [(46, 49, "START_TIME"), (14, 29, "EVENT_TITLE")]),
-("He has to finish the project by tomorrow at 7 PM.", [(33, 48, "END_TIME"), (22, 28, "EVENT_TITLE")]),
-("The conference starts tomorrow morning and ends on Friday evening.", [(23, 38, "START_TIME"), (52, 65, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The exhibition starts next week and ends on Sunday.", [(23, 31, "START_TIME"), (45, 50, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The training program starts in two days and ends on Wednesday.", [(29, 39, "START_TIME"), (53, 61, "END_TIME"), (5, 20, "EVENT_TITLE")]),
-("The festival starts next month and ends on the 22nd.", [(21, 30, "START_TIME"), (41, 51, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The tournament starts tomorrow afternoon and ends on Sunday night.", [(23, 40, "START_TIME"), (51, 65, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The workshop starts next week and ends on Friday afternoon.", [(21, 29, "START_TIME"), (40, 58, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The conference starts in three days and ends on Sunday evening.", [(23, 35, "START_TIME"), (46, 62, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The seminar starts tomorrow morning and ends on Friday afternoon.", [(20, 35, "START_TIME"), (46, 64, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The exhibition starts next month and ends on the 11st.", [(23, 39, "START_TIME"), (50, 60, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The game event starts tomorrow and ends on Wednesday afternoon.", [(23, 30, "START_TIME"), (41, 62, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The sales ends at 7 PM.", [(19, 22, END_TIME), (5, 9, EVENT_TITLE)]),
-("The promotion ends at 7 PM.", [(23, 26, "END_TIME"), (6, 13, "EVENT_TITLE")]),
-("The auction ends at 7 PM.", [(21, 24, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The concert ends at 10 PM.", [(21, 25, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The exhibition ends at 7 PM.", [(24, 27, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The show ends at 7 PM.", [(18, 21, "END_TIME"), (5, 8, "EVENT_TITLE")]),
-("The seminar ends at 7 PM.", [(21, 24, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The conference ends at 3 PM.", [(23, 26, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The workshop ends at 7 PM.", [(22, 25, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The event ends at 7 PM.", [(19, 22, "END_TIME"), (5, 9, "EVENT_TITLE")]),
-("I will be in a coaching session from 3 PM to 7 PM.", [(38, 41, "START_TIME"), (46, 49, "END_TIME"), (16, 31, "EVENT_TITLE")]),
-("He has a guitar lesson at 7 PM.", [(27, 30, "START_TIME"), (10, 22, "EVENT_TITLE")]),
-("They have a swimming practice at 7 PM.", [(34, 37, "START_TIME"), (13, 29, "EVENT_TITLE")]),
-("She has a dance rehearsal at 7 PM.", [(30, 33, "START_TIME"), (11, 25, "EVENT_TITLE")]),
-("I have a piano class at 7 PM.", [(25, 28, "START_TIME"), (10, 20, "EVENT_TITLE")]),
-("She has a fitness training at 7 AM.", [(31, 34, "START_TIME"), (11, 26, "EVENT_TITLE")]),
-("We have a client meeting from 7 PM to 7 PM.", [(31, 26, "START_TIME"), (39, 42, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("Reminder for the interview at 12 AM.", [(31, 35, "START_TIME"), (18, 26, "EVENT_TITLE")]),
-("I need to finish my homework before 10:33 P.M.", [(37, 45, END_TIME), (21, 28, EVENT_TITLE)]),
-("I need to submit my report before 7:02 P.M.", [(35, 43, "END_TIME"), (21, 26, "EVENT_TITLE")]),
-("I have a meeting from 3 PM to 8 PM.", [(23, 26, "START_TIME"), (31, 34, "END_TIME"), (10, 16, EVENT_TITLE)]),
-("Reminder for the presentation at 11 AM.", [(34, 38, "START_TIME"), (18, 29, EVENT_TITLE)]),
-("I have a presentation from 3 AM to 10 PM.", [(28, 31, "START_TIME"), (36, 40, "END_TIME"), (10, 21, "EVENT_TITLE")]),
-("She has a doctor's appointment from 4 PM to 8 PM.", [(37, 40, "START_TIME"), (45, 48, "END_TIME"), (11, 30, "EVENT_TITLE")]),
-("We are attending a conference from 10 AM to 8 PM.", [(36, 40, "START_TIME"), (45, 48, "END_TIME"), (20, 29, "EVENT_TITLE")]),
-("He has a lunch meeting from 10 AM to 8 PM.", [(29, 33, "START_TIME"), (38, 41, "END_TIME"), (16, 22, "EVENT_TITLE")]),
-("They have a team building activity from 4 PM to 8 PM.", [(41, 44, "START_TIME"), (49, 52, "END_TIME"), (13, 34, "EVENT_TITLE")]),
-("I will be in a training session from 4 PM to 11 PM.", [(38, 41, "START_TIME"), (46, 50, "END_TIME"), (16, 31, "EVENT_TITLE")]),
-("She is attending a wedding ceremony from 4 PM to 8 PM.", [(42, 45, "START_TIME"), (50, 53, "END_TIME"), (20, 35, "EVENT_TITLE")]),
-("We have a client meeting from 11 AM to 12 PM.", [(31, 35, "START_TIME"), (40, 44, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("He has a business trip from 4 AM to 8 PM.", [(29, 32, "START_TIME"), (37, 40, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("They have a project deadline from 4 PM to 8 PM.", [(35, 38, "START_TIME"), (43, 46, "END_TIME"), (13, 28, "EVENT_TITLE")]),
-("She will arrive at 4 AM and leave at 8 PM.", [(20, 23, "START_TIME"), (38, 41, "END_TIME")]),
-("The concert starts at 4 PM and ends at 11 PM.", [(22, 25, "START_TIME"), (39, 43, "END_TIME"), (5, 10, "EVENT_TITLE")]),
-("They have a lunch break from 11 AM to 8 PM.", [(30, 34, "START_TIME"), (39, 42, "END_TIME"), (13, 23, "EVENT_TITLE")]),
-("The movie starts at 4 PM, and the doors open at 2 PM.", [(48, 51, "START_TIME"), (20, 23, "END_TIME"), (5, 9, EVENT_TITLE)]),
-("She has a yoga class at 5 AM.", [(25, 28, "START_TIME"), (11, 20, "EVENT_TITLE")]),
-("He has a business trip from 4 AM to 8 PM.", [(29, 32, "START_TIME"), (37, 40, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("The workshop starts at 4 AM and ends at 8 PM.", [(20, 22, "START_TIME"), (35, 37, "END_TIME"), (4, 12, "EVENT_TITLE")]),
-("I have to cook at 8 PM.", [(19, 22, START_TIME), (11, 14, EVENT_TITLE)]),
-("She needs to study at 8 AM.", [(23, 26, "START_TIME"), (14, 18, "EVENT_TITLE")]),
-("We have to clean the house at 11 AM.", [(31, 35, "START_TIME"), (12, 26, "EVENT_TITLE")]),
-("They need to exercise at 2 AM.", [(26, 29, "START_TIME"), (14, 21, "EVENT_TITLE")]),
-("I have to call my friend at 8 PM.", [(29, 32, "START_TIME"), (11, 24, "EVENT_TITLE")]),
-("She needs to prepare for the presentation at 7 AM.", [(46, 49, "START_TIME"), (30, 41, "EVENT_TITLE")]),
-("We have to take the dog for a walk at 9 PM.", [(39, 42, "START_TIME"), (12, 34, "EVENT_TITLE")]),
-("They need to go grocery shopping at 8 PM.", [(37, 40, "START_TIME"), (14, 32, "EVENT_TITLE")]),
-("I have to submit the application by 8 PM.", [(37, 40, "END_TIME"), (11, 32, "EVENT_TITLE")]),
-("She needs to pick up the kids from school at 4 PM.", [(46, 49, "START_TIME"), (14, 29, "EVENT_TITLE")]),
-("He has to finish the project by tomorrow at 4 PM.", [(33, 48, "END_TIME"), (22, 28, "EVENT_TITLE")]),
-("The conference starts tomorrow morning and ends on Monday evening.", [(23, 38, "START_TIME"), (52, 65, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The exhibition starts next week and ends on Monday.", [(23, 31, "START_TIME"), (45, 50, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The training program starts in one days and ends on Wednesday.", [(29, 39, "START_TIME"), (53, 61, "END_TIME"), (5, 20, "EVENT_TITLE")]),
-("The festival starts last month and ends on the 23rd.", [(21, 30, "START_TIME"), (41, 51, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The tournament starts tomorrow afternoon and ends on Friday night.", [(23, 40, "START_TIME"), (51, 65, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The workshop starts next week and ends on Monday afternoon.", [(21, 29, "START_TIME"), (40, 58, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The conference starts in eight days and ends on Friday evening.", [(23, 35, "START_TIME"), (46, 62, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The seminar starts tomorrow morning and ends on Sunday afternoon.", [(20, 35, "START_TIME"), (46, 64, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The exhibition starts next month and ends on the 13rd.", [(23, 39, "START_TIME"), (50, 60, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The game event starts tomorrow and ends on Thursday afternoon.", [(23, 30, "START_TIME"), (41, 58, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The sales ends at 1 PM.", [(19, 22, END_TIME), (5, 9, EVENT_TITLE)]),
-("The promotion ends at 4 PM.", [(23, 26, "END_TIME"), (6, 13, "EVENT_TITLE")]),
-("The auction ends at 8 PM.", [(21, 24, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The concert ends at 12 AM.", [(21, 25, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The exhibition ends at 9 PM.", [(24, 27, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The show ends at 7 PM.", [(18, 21, "END_TIME"), (5, 8, "EVENT_TITLE")]),
-("The seminar ends at 5 PM.", [(21, 24, "END_TIME"), (5, 11, "EVENT_TITLE")]),
-("The conference ends at 6 PM.", [(23, 26, "END_TIME"), (5, 14, "EVENT_TITLE")]),
-("The workshop ends at 6 PM.", [(22, 25, "END_TIME"), (5, 12, "EVENT_TITLE")]),
-("The event ends at 5 PM.", [(19, 22, "END_TIME"), (5, 9, "EVENT_TITLE")]),
-("I will be in a coaching session from 4 AM to 9 PM.", [(38, 41, "START_TIME"), (46, 49, "END_TIME"), (16, 31, "EVENT_TITLE")]),
-("He has a guitar lesson at 5 PM.", [(27, 30, "START_TIME"), (10, 22, "EVENT_TITLE")]),
-("They have a swimming practice at 9 AM.", [(34, 37, "START_TIME"), (13, 29, "EVENT_TITLE")]),
-("She has a dance rehearsal at 9 PM.", [(30, 33, "START_TIME"), (11, 25, "EVENT_TITLE")]),
-("I have a piano class at 9 PM.", [(25, 28, "START_TIME"), (10, 20, "EVENT_TITLE")]),
-("She has a fitness training at 9 AM.", [(31, 34, "START_TIME"), (11, 26, "EVENT_TITLE")]),
-("We have a client meeting from 4 AM to 9 PM.", [(31, 26, "START_TIME"), (39, 42, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("Reminder for the interview at 11 PM.", [(31, 35, "START_TIME"), (18, 26, "EVENT_TITLE")]),
-("I need to finish my homework before 11:37 A.M.", [(37, 45, END_TIME), (21, 28, EVENT_TITLE)]),
-("I need to submit my report before 6:33 A.M.", [(35, 43, "END_TIME"), (21, 26, "EVENT_TITLE")]),
-("I need to complete the project before 7:26 P.M.", [(39, 47, "END_TIME"), (24, 30, "EVENT_TITLE")]),
-("I need to finish reading the book before 11:55 P.M.", [(42, 51, "END_TIME"), (18, 24, "EVENT_TITLE")]),
-("I need to prepare for the presentation before 9:22 A.M.", [(47, 55, "END_TIME"), (27, 38, "EVENT_TITLE")]),
-("I need to finalize the budget before 2:33 P.M.", [(38, 46, "END_TIME"), (11, 29, "EVENT_TITLE")]),
-("I need to complete the online course before 1:55 P.M.", [(45, 53, "END_TIME"), (24, 36, "EVENT_TITLE")]),
-("I need to finish writing the essay before 7:39 P.M.", [(43, 51, "END_TIME"), (18, 34, "EVENT_TITLE")]),
-("I need to study for the exam before 6:24 P.M.", [(37, 45, "END_TIME"), (11, 28, "EVENT_TITLE")]),
-("I need to finish the presentation slides before 9:36 P.M.", [(49, 57, "END_TIME"), (22, 33, "EVENT_TITLE")]),
-("I need to send the email before 5:21 P.M.", [(33, 41, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("I need to review the document before 4:19 A.M.", [(38, 46, "END_TIME"), (11, 29, "EVENT_TITLE")]),
-("I need to complete the survey before 2:17 A.M.", [(38, 46, "END_TIME"), (11, 29, "EVENT_TITLE")]),
-("I need to finish the task before 3:03 P.M.", [(34, 42, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("I need to analyze the data from 10:05 A.M. to 4:00 P.M.", [(33, 42, "START_TIME"), (47, 55, "END_TIME"), (11, 26, "EVENT_TITLE")]),
-("I need to review the financial reports from 5:09 A.M. to 11:22 A.M.", [(45, 53, "START_TIME"), (58, 67, "END_TIME"), (11, 38, "EVENT_TITLE")]),
-("I need to analyze the market trends from 6:06 P.M. to 8:28 P.M.", [(42, 50, "START_TIME"), (55, 63, "END_TIME"), (11, 35, "EVENT_TITLE")]),
-("I need to examine the research findings from 11:35 A.M. to 12:33 P.M.", [(46, 55, "START_TIME"), (60, 69, "END_TIME"), (11, 39, "EVENT_TITLE")]),
-("I need to analyze the customer feedback from 7:34 A.M. to 11:36 A.M.", [(46, 54, "START_TIME"), (59, 68, "END_TIME"), (11, 39, "EVENT_TITLE")]),
-("I need to process the data sets from 3:39 P.M. to 5:34 P.M.", [(38, ,46 "START_TIME"), (51, 59, "END_TIME"), (21, 36, "EVENT_TITLE")]),
-("I need to review the patient records from 11:55 A.M. to 12:09 P.M.", [(43, 52, "START_TIME"), (57, 66, "END_TIME"), (11, 36, "EVENT_TITLE")]),
-("He has a cooking workshop from 9:28 A.M. to 11:25 P.M.", [(32, 40, "START_TIME"), (45, 54, "END_TIME"), (10, 25, "EVENT_TITLE")]),
-("She has a painting class from 8:56 P.M. to 9:24 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("He has a coding workshop from 12:51 A.M. to 12:31 P.M.", [(31, 40, "START_TIME"), (45, 54, "END_TIME"), (10, 24, "EVENT_TITLE")]),
-("He has a photography workshop from 6:56 P.M. to 8:54 P.M.", [(36, 44, "START_TIME"), (49, 57, "END_TIME"), (10, 29, "EVENT_TITLE")]),
-("She has a music class from 10:15 A.M. to 1:51 P.M.", [(28, 37, "START_TIME"), (42, 50, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("She has a language course from 5:12 A.M. to 11:13 A.M.", [(32, 40, "START_TIME"), (45, 54, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("He has a cooking demonstration from 1:14 P.M. to 9:15 P.M.", [(37, 45, "START_TIME"), (50, 58, "END_TIME"), (10, 30, "EVENT_TITLE")]),
-("She has a dance practice from 2:16 P.M. to 8:17 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("He has a cooking class from 11:19 A.M. to 8:18 P.M.", [(29, 38, "START_TIME"), (43, 51, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("She has a chess class from 10:20 A.M. to 7:21 P.M.", [(28, 37, "START_TIME"), (42, 50, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("He has a tennis lesson from 1:23 P.M. to 8:22 P.M.", [(29, 37, "START_TIME"), (42, 50, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("I have to attend a business meeting from 1:55 A.M. to 11:23 A.M.", [(42, 50, "START_TIME"), (55, 64, "END_TIME"), (20, 35, "EVENT_TITLE")]),
-("I have to clean the house from 1:24 P.M. to 5:25 P.M.", [(32, 40, "START_TIME"), (45, 53, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("I have to pick up my kids from school from 1:26 P.M. to 5:27 P.M.", [(44, 52, "START_TIME"), (57, 65, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("I have to buy food at supermarket from 11:29 A.M. to 12:28 P.M.", [(40, 49, "START_TIME"), (54, 63, "END_TIME"), (11, 18, "EVENT_TITLE")]),
-("I have to go to the gym from 5:30 A.M. to 10:31 A.M.", [(30, 38, "START_TIME"), (43, 52, "END_TIME"), (11, 23, "EVENT_TITLE")]),
-("I have to run errands from 11:32 A.M. to 8:33 P.M.", [(28, 37, "START_TIME"), (42, 50, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("I have to meet a friend for lunch from 12:34 P.M. to 5:52 P.M.", [(40, 49, "START_TIME"), (54, 62, "END_TIME"), (11, 23, "EVENT_TITLE")]),
-("I have to do grocery shopping from 11:36 A.M. to 12:37 P.M.", [(36, 45, "START_TIME"), (50, 59, "END_TIME"), (22, 29, "EVENT_TITLE")]),
-("I have to go for a dental appointment from 1:38 P.M. to 5:39 P.M.", [(44, 52, "START_TIME"), (57, 65, "END_TIME"), (20, 37, "EVENT_TITLE")]),
-("I have to walk my dog from 5:40 P.M. to 9:12 P.M.", [(28, 36, "START_TIME"), (41, 49, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("I have to visit the library from 12:40 A.M. to 8:41 P.M.", [(34, 43, "START_TIME"), (48, 56, "END_TIME"), (11, 27, "EVENT_TITLE")]),
-("I have to do laundry from 11:42 A.M. to 12:43 P.M.", [(27, 36, "START_TIME"), (41, 50, "END_TIME"), (11, 20, "EVENT_TITLE")]),
-("I have to visit my grandparents from 1:44 P.M. to 9:45 P.M.", [(38, 46, "START_TIME"), (51, 59, "END_TIME"), (11, 31, "EVENT_TITLE")]),
-("I have to attend a webinar from 1:46 P.M. to 9:47 P.M.", [(33, 41, "START_TIME"), (46, 54, "END_TIME"), (11, 26, "EVENT_TITLE")]),
-("I have to go for a job interview from 10:48 A.M. to 11:49 P.M.", [(39, 48, "START_TIME"), (53, 62, "END_TIME"), (20, 32, "EVENT_TITLE")]),
-("I have to attend a parent-teacher meeting from 5:51 P.M. to 8:52 P.M.", [(48, 56, "START_TIME"), (61, 69, "END_TIME"), (20, 41, "EVENT_TITLE")]),
-("I have to take a nap from 3:53 P.M. to 9:54 P.M.", [(27, 35, "START_TIME"), (40, 48, "END_TIME"), (11, 20, "EVENT_TITLE")]),
-("I have to go for a jog from 8:55 A.M. to 11:56 A.M.", [(29, 37, "START_TIME"), (42, 51, "END_TIME"), (20, 22, "EVENT_TITLE")]),
-("I have to volunteer at the local shelter from 10:57 A.M. to 1:30 P.M.", [(47, 56, "START_TIME"), (61, 69, "END_TIME"), (11, 19, "EVENT_TITLE")]),
-("I have to go for a bike ride from 2:59 P.M. to 8:58 P.M.", [(35, 43, "START_TIME"), (48, 56, "END_TIME"), (20, 28, "EVENT_TITLE")]),
-("She has to go shopping from 10:01 A.M. to 8:02 P.M.", [(29, 38, "START_TIME"), (43, 51, "END_TIME"), (15, 22, "EVENT_TITLE")]),
-("She has to go to the bank from 2:02 P.M. to 8:03 P.M.", [(32, 40, "START_TIME"), (45, 53, "END_TIME"), (12, 25, "EVENT_TITLE")]),
-("He has to go for a haircut from 11:04 A.M. to 12:35 P.M.", [(33, 42, "START_TIME"), (47, 56, "END_TIME"), (20, 26, "EVENT_TITLE")]),
-("He has to meet with his advisor from 2:36 P.M. to 9:04 P.M.", [(38, 46, "START_TIME"), (51, 59, "END_TIME"), (11, 31, "EVENT_TITLE")]),
-("She has to have a meeting with colleagues from 10:39 A.M. to 3:05 P.M.", [(48, 57, "START_TIME"), (62, 70, "END_TIME"), (19, 25, "EVENT_TITLE")]),
-("She has to go to the post office from 3:18 P.M. to 8:35 P.M.", [(39, 47, "START_TIME"), (52, 60, "END_TIME"), (12, 32, "EVENT_TITLE")]),
-("She has to meet a colleague for lunch from 10:16 A.M. to 3:24 P.M.", [(43, 52, "START_TIME"), (57, 65, "END_TIME"), (11, 26, "EVENT_TITLE")]),
-("He has to meet with his supervisor from 1:28 P.M. to 7:48 P.M.", [(41, 49, "START_TIME"), (54, 62, "END_TIME"), (11, 34, "EVENT_TITLE")]),
-("She has to take a shower from 2:19 P.M. to 8:16 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (12, 24, "EVENT_TITLE")]),
-("She has to pick up groceries from 11:20 A.M. to 7:30 P.M.", [(35, 44, "START_TIME"), (49, 57, "END_TIME"), (12, 28, "EVENT_TITLE")]),
-("She has to go for a workout from 4:20 P.M. to 8:54 P.M.", [(34, 42, "START_TIME"), (47, 55, "END_TIME"), (21, 27, "EVENT_TITLE")]),
-("She has to take a break from work from 3:31 P.M. to 9:32 P.M.", [(40, 48, "START_TIME"), (53, 61, "END_TIME"), (12, 23, "EVENT_TITLE")]),
-("I want to play games from 2:16 P.M. to 7:19 P.M.", [(27, 35, "START_TIME"), (40, 48, "END_TIME"), (11, 20, "EVENT_TITLE")]),
-("She want to eat dinner with clients from 2:13 P.M. to 9:17 P.M.", [(42, 50, "START_TIME"), (55, 63, "END_TIME"), (13, 35, "EVENT_TITLE")]),
-("I have to do my homework from 2:59 P.M. to 9:06 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("I have to prepare for midterm test from 2:24 P.M. to 9:26 P.M.", [(41, 49, "START_TIME"), (54, 62, "END_TIME"), (11, 34, "EVENT_TITLE")]),
-("I have to complete the task before 7:18 P.M.", [(36, 44, "END_TIME"), (11, 27, "EVENT_TITLE")]),
-("I have to relax after 7:19 P.M.", [(23, 31, "START_TIME"), (11, 15, "EVENT_TITLE")]),
-("I have to sleep before 7:20 P.M.", [(24, 32, "END_TIME"), (11, 15, "EVENT_TITLE")]),
-("I need to finish the task in 8 hours.", [(35, 43, "DURATION"), (11, 29, "EVENT_TITLE")]),
-("He has a cooking workshop from 9:57 A.M. to 12:54 P.M.", [(32, 40, "START_TIME"), (45, 54, "END_TIME"), (10, 25, "EVENT_TITLE")]),
-("She has a painting class from 1:55 P.M. to 3:54 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("He has a coding workshop from 10:12 A.M. to 12:53 P.M.", [(31, 40, "START_TIME"), (45, 54, "END_TIME"), (10, 24, "EVENT_TITLE")]),
-("He has a photography workshop from 2:12 P.M. to 5:52 P.M.", [(36, 44, "START_TIME"), (49, 57, "END_TIME"), (10, 29, "EVENT_TITLE")]),
-("She has a music class from 11:00 A.M. to 1:51 P.M.", [(28, 37, "START_TIME"), (42, 50, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("She has a language course from 9:12 A.M. to 11:50 A.M.", [(32, 40, "START_TIME"), (45, 54, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("He has a cooking demonstration from 1:12 P.M. to 4:49 P.M.", [(37, 45, "START_TIME"), (50, 58, "END_TIME"), (10, 30, "EVENT_TITLE")]),
-("She has a dance practice from 2:12 P.M. to 4:48 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (11, 24, "EVENT_TITLE")]),
-("He has a cooking class from 11:12 A.M. to 2:44 P.M.", [(29, 38, "START_TIME"), (43, 51, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("She has a chess class from 10:12 A.M. to 1:47 P.M.", [(28, 37, "START_TIME"), (42, 50, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("He has a tennis lesson from 6:12 P.M. to 8:46 P.M.", [(29, 37, "START_TIME"), (42, 50, "END_TIME"), (10, 22, "EVENT_TITLE")]),
-("I have to attend a business meeting from 9:45 A.M. to 11:00 A.M.", [(42, 50, "START_TIME"), (55, 64, "END_TIME"), (20, 35, "EVENT_TITLE")]),
-("I have to clean the house from 1:00 P.M. to 3:44 P.M.", [(32, 40, "START_TIME"), (45, 53, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("I have to pick up my kids from school from 3:43 P.M. to 5:30 P.M.", [(44, 52, "START_TIME"), (57, 65, "END_TIME"), (11, 25, "EVENT_TITLE")]),
-("I have to buy food at supermarket from 10:13 A.M. to 12:42 P.M.", [(40, 49, "START_TIME"), (54, 63, "END_TIME"), (11, 18, "EVENT_TITLE")]),
-("I have to go to the gym from 9:41 A.M. to 11:13 A.M.", [(30, 38, "START_TIME"), (43, 52, "END_TIME"), (11, 23, "EVENT_TITLE")]),
-("I have to run errands from 11:40 A.M. to 1:13 P.M.", [(28, 37, "START_TIME"), (42, 50, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("I have to meet a friend for lunch from 12:39 P.M. to 2:30 P.M.", [(40, 49, "START_TIME"), (54, 62, "END_TIME"), (11, 23, "EVENT_TITLE")]),
-("I have to do grocery shopping from 10:13 A.M. to 12:38 P.M.", [(36, 45, "START_TIME"), (50, 59, "END_TIME"), (22, 29, "EVENT_TITLE")]),
-("I have to go for a dental appointment from 3:13 P.M. to 5:37 P.M.", [(44, 52, "START_TIME"), (57, 65, "END_TIME"), (20, 37, "EVENT_TITLE")]),
-("I have to walk my dog from 5:36 P.M. to 7:13 P.M.", [(28, 36, "START_TIME"), (41, 49, "END_TIME"), (11, 21, "EVENT_TITLE")]),
-("I have to visit the library from 11:35 A.M. to 1:13 P.M.", [(34, 43, "START_TIME"), (48, 56, "END_TIME"), (11, 27, "EVENT_TITLE")]),
-("I have to do laundry from 10:34 A.M. to 12:13 P.M.", [(27, 36, "START_TIME"), (41, 50, "END_TIME"), (11, 20, "EVENT_TITLE")]),
-("I have to visit my grandparents from 3:33 P.M. to 5:13 P.M.", [(38, 46, "START_TIME"), (51, 59, "END_TIME"), (11, 31, "EVENT_TITLE")]),
-("I have to attend a webinar from 1:32 P.M. to 3:13 P.M.", [(33, 41, "START_TIME"), (46, 54, "END_TIME"), (11, 26, "EVENT_TITLE")]),
-("I have to go for a job interview from 10:31 A.M. to 12:13 P.M.", [(39, 48, "START_TIME"), (53, 62, "END_TIME"), (20, 32, "EVENT_TITLE")]),
-("I have to attend a parent-teacher meeting from 2:13 P.M. to 4:30 P.M.", [(48, 56, "START_TIME"), (61, 69, "END_TIME"), (20, 41, "EVENT_TITLE")]),
-("I have to take a nap from 3:29 P.M. to 5:26 P.M.", [(27, 35, "START_TIME"), (40, 48, "END_TIME"), (11, 20, "EVENT_TITLE")]),
-("I have to go for a jog from 8:28 A.M. to 10:26 A.M.", [(29, 37, "START_TIME"), (42, 51, "END_TIME"), (20, 22, "EVENT_TITLE")]),
-("I have to volunteer at the local shelter from 11:27 A.M. to 1:27 P.M.", [(47, 56, "START_TIME"), (61, 69, "END_TIME"), (11, 19, "EVENT_TITLE")]),
-("I have to go for a bike ride from 2:26 P.M. to 4:24 P.M.", [(35, 43, "START_TIME"), (48, 56, "END_TIME"), (20, 28, "EVENT_TITLE")]),
-("She has to go shopping from 11:24 A.M. to 2:25 P.M.", [(29, 38, "START_TIME"), (43, 51, "END_TIME"), (15, 22, "EVENT_TITLE")]),
-("She has to go to the bank from 1:24 P.M. to 4:24 P.M.", [(32, 40, "START_TIME"), (45, 53, "END_TIME"), (12, 25, "EVENT_TITLE")]),
-("He has to go for a haircut from 10:23 A.M. to 12:24 P.M.", [(33, 42, "START_TIME"), (47, 56, "END_TIME"), (20, 26, "EVENT_TITLE")]),
-("He has to meet with his advisor from 3:22 P.M. to 6:24 P.M.", [(38, 46, "START_TIME"), (51, 59, "END_TIME"), (11, 31, "EVENT_TITLE")]),
-("She has to have a meeting with colleagues from 12:37 P.M. to 3:21 P.M.", [(48, 57, "START_TIME"), (62, 70, "END_TIME"), (19, 25, "EVENT_TITLE")]),
-("She has to go to the post office from 1:20 P.M. to 4:37 P.M.", [(39, 47, "START_TIME"), (52, 60, "END_TIME"), (12, 32, "EVENT_TITLE")]),
-("She has to meet a colleague for lunch from 12:19 P.M. to 3:37 P.M.", [(43, 52, "START_TIME"), (57, 65, "END_TIME"), (11, 26, "EVENT_TITLE")]),
-("He has to meet with his supervisor from 3:18 P.M. to 6:39 P.M.", [(41, 49, "START_TIME"), (54, 62, "END_TIME"), (11, 34, "EVENT_TITLE")]),
-("She has to take a shower from 2:17 P.M. to 5:39 P.M.", [(31, 39, "START_TIME"), (44, 52, "END_TIME"), (12, 24, "EVENT_TITLE")]),
+"classes": [
+    "START_TIME",
+    "END_TIME",
+    "EVENT_TITLE",
+    "DURATION"
+],
+"annotations": [
+    [
+        "I have to take a quiz at 21:30\r",
+        {
+            "entities": [
+                [
+                    17,
+                    21,
+                    "EVENT_TITLE"
+                ],
+                [
+                    25,
+                    30,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I woke up at 9:30\r",
+        {
+            "entities": [
+                [
+                    2,
+                    9,
+                    "EVENT_TITLE"
+                ],
+                [
+                    13,
+                    17,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I work on projects at 4:00\r",
+        {
+            "entities": [
+                [
+                    10,
+                    18,
+                    "EVENT_TITLE"
+                ],
+                [
+                    22,
+                    26,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have a meeting from 14:00 to 16:00.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    16,
+                    "EVENT_TITLE"
+                ],
+                [
+                    22,
+                    27,
+                    "START_TIME"
+                ],
+                [
+                    31,
+                    36,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "Reminder for the presentation at 10:00.\r",
+        {
+            "entities": [
+                [
+                    17,
+                    29,
+                    "EVENT_TITLE"
+                ],
+                [
+                    33,
+                    38,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have a presentation from 9:00 to 11:00.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    21,
+                    "EVENT_TITLE"
+                ],
+                [
+                    27,
+                    31,
+                    "START_TIME"
+                ],
+                [
+                    35,
+                    40,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has a doctor's appointment from 15:00 to 17:00.\r",
+        {
+            "entities": [
+                [
+                    19,
+                    30,
+                    "EVENT_TITLE"
+                ],
+                [
+                    36,
+                    41,
+                    "START_TIME"
+                ],
+                [
+                    45,
+                    50,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "We are attending a conference from 10:00 to 16:00.\r",
+        {
+            "entities": [
+                [
+                    19,
+                    29,
+                    "EVENT_TITLE"
+                ],
+                [
+                    35,
+                    40,
+                    "START_TIME"
+                ],
+                [
+                    44,
+                    49,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "He has a lunch meeting from 12:00 to 13:00.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    22,
+                    "EVENT_TITLE"
+                ],
+                [
+                    28,
+                    33,
+                    "START_TIME"
+                ],
+                [
+                    37,
+                    42,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "They have a team building activity from 14:00 to 17:00.\r",
+        {
+            "entities": [
+                [
+                    12,
+                    34,
+                    "EVENT_TITLE"
+                ],
+                [
+                    40,
+                    45,
+                    "START_TIME"
+                ],
+                [
+                    49,
+                    54,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I will be in a training session from 9:00 to 12:00.\r",
+        {
+            "entities": [
+                [
+                    15,
+                    31,
+                    "EVENT_TITLE"
+                ],
+                [
+                    37,
+                    41,
+                    "START_TIME"
+                ],
+                [
+                    45,
+                    50,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She is attending a wedding ceremony from 14:00 to 18:00.\r",
+        {
+            "entities": [
+                [
+                    19,
+                    35,
+                    "EVENT_TITLE"
+                ],
+                [
+                    41,
+                    46,
+                    "START_TIME"
+                ],
+                [
+                    50,
+                    55,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "We have a client meeting from 10:00 to 11:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    24,
+                    "EVENT_TITLE"
+                ],
+                [
+                    30,
+                    35,
+                    "START_TIME"
+                ],
+                [
+                    39,
+                    44,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "He has a business trip from 9:00 to 17:00.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    22,
+                    "EVENT_TITLE"
+                ],
+                [
+                    28,
+                    32,
+                    "START_TIME"
+                ],
+                [
+                    36,
+                    41,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "They have a project deadline from 14:00 to 18:00.\r",
+        {
+            "entities": [
+                [
+                    12,
+                    28,
+                    "EVENT_TITLE"
+                ],
+                [
+                    34,
+                    39,
+                    "START_TIME"
+                ],
+                [
+                    43,
+                    48,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She will arrive at 9:00 and leave at 18:00.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    15,
+                    "EVENT_TITLE"
+                ],
+                [
+                    19,
+                    23,
+                    "START_TIME"
+                ],
+                [
+                    28,
+                    33,
+                    "EVENT_TITLE"
+                ],
+                [
+                    37,
+                    42,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The concert starts at 19:00 and ends at 0:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    11,
+                    "EVENT_TITLE"
+                ],
+                [
+                    22,
+                    27,
+                    "START_TIME"
+                ],
+                [
+                    40,
+                    44,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "They have a lunch break from 12:00 to 13:00.\r",
+        {
+            "entities": [
+                [
+                    12,
+                    23,
+                    "EVENT_TITLE"
+                ],
+                [
+                    29,
+                    34,
+                    "START_TIME"
+                ],
+                [
+                    38,
+                    43,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The movie starts at 20:00, and the doors open at 19:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    9,
+                    "EVENT_TITLE"
+                ],
+                [
+                    20,
+                    25,
+                    "END_TIME"
+                ],
+                [
+                    35,
+                    45,
+                    "EVENT_TITLE"
+                ],
+                [
+                    49,
+                    54,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has a yoga class at 17:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    20,
+                    "EVENT_TITLE"
+                ],
+                [
+                    24,
+                    29,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "He has a business trip from 9:00 to 17:00.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    22,
+                    "EVENT_TITLE"
+                ],
+                [
+                    28,
+                    32,
+                    "START_TIME"
+                ],
+                [
+                    36,
+                    41,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The workshop starts at 9:00 and ends at 17:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    12,
+                    "EVENT_TITLE"
+                ],
+                [
+                    23,
+                    27,
+                    "START_TIME"
+                ],
+                [
+                    40,
+                    45,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to cook at 17:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    14,
+                    "EVENT_TITLE"
+                ],
+                [
+                    18,
+                    23,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She needs to study at 19:00.\r",
+        {
+            "entities": [
+                [
+                    13,
+                    18,
+                    "EVENT_TITLE"
+                ],
+                [
+                    22,
+                    27,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "We have to clean the house at 10:00.\r",
+        {
+            "entities": [
+                [
+                    11,
+                    26,
+                    "EVENT_TITLE"
+                ],
+                [
+                    30,
+                    35,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "They need to exercise at 6:00.\r",
+        {
+            "entities": [
+                [
+                    13,
+                    21,
+                    "EVENT_TITLE"
+                ],
+                [
+                    25,
+                    29,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to call my friend at 18:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    24,
+                    "EVENT_TITLE"
+                ],
+                [
+                    28,
+                    33,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She needs to prepare for the presentation at 9:00.\r",
+        {
+            "entities": [
+                [
+                    29,
+                    41,
+                    "EVENT_TITLE"
+                ],
+                [
+                    45,
+                    49,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "We have to take the dog for a walk at 8:00.\r",
+        {
+            "entities": [
+                [
+                    20,
+                    23,
+                    "EVENT_TITLE"
+                ],
+                [
+                    30,
+                    34,
+                    "EVENT_TITLE"
+                ],
+                [
+                    38,
+                    42,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "They need to go grocery shopping at 16:00.\r",
+        {
+            "entities": [
+                [
+                    16,
+                    32,
+                    "EVENT_TITLE"
+                ],
+                [
+                    36,
+                    41,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to submit the application by 17:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    32,
+                    "EVENT_TITLE"
+                ],
+                [
+                    36,
+                    41,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She needs to pick up the kids from school at 15:00.\r",
+        {
+            "entities": [
+                [
+                    13,
+                    20,
+                    "EVENT_TITLE"
+                ],
+                [
+                    25,
+                    29,
+                    "EVENT_TITLE"
+                ],
+                [
+                    45,
+                    50,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "He has to finish the project by tomorrow at 18:00.\r",
+        {
+            "entities": [
+                [
+                    21,
+                    28,
+                    "EVENT_TITLE"
+                ],
+                [
+                    44,
+                    49,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The conference starts tomorrow 6:00 and ends on Friday 19:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    14,
+                    "EVENT_TITLE"
+                ],
+                [
+                    31,
+                    35,
+                    "START_TIME"
+                ],
+                [
+                    55,
+                    60,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The exhibition starts next week and ends on Sunday 18:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    14,
+                    "EVENT_TITLE"
+                ],
+                [
+                    51,
+                    56,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The tournament starts tomorrow afternoon and ends on Sunday night 20:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    14,
+                    "EVENT_TITLE"
+                ],
+                [
+                    66,
+                    71,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The game event starts tomorrow and ends on Wednesday afternoon 15:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    14,
+                    "EVENT_TITLE"
+                ],
+                [
+                    63,
+                    68,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The sales ends at 18:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    9,
+                    "EVENT_TITLE"
+                ],
+                [
+                    18,
+                    23,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The promotion ends at 20:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    13,
+                    "EVENT_TITLE"
+                ],
+                [
+                    22,
+                    27,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The auction ends at 17:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    11,
+                    "EVENT_TITLE"
+                ],
+                [
+                    20,
+                    25,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The concert ends at 22:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    11,
+                    "EVENT_TITLE"
+                ],
+                [
+                    20,
+                    25,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The exhibition ends at 19:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    14,
+                    "EVENT_TITLE"
+                ],
+                [
+                    23,
+                    28,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The show ends at 21:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    8,
+                    "EVENT_TITLE"
+                ],
+                [
+                    17,
+                    22,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The seminar ends at 16:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    11,
+                    "EVENT_TITLE"
+                ],
+                [
+                    20,
+                    25,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The conference ends at 17:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    14,
+                    "EVENT_TITLE"
+                ],
+                [
+                    23,
+                    28,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The workshop ends at 18:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    12,
+                    "EVENT_TITLE"
+                ],
+                [
+                    21,
+                    26,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The event ends at 19:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    9,
+                    "EVENT_TITLE"
+                ],
+                [
+                    18,
+                    23,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I will be in a coaching session from 15:00 to 18:00.\r",
+        {
+            "entities": [
+                [
+                    15,
+                    31,
+                    "EVENT_TITLE"
+                ],
+                [
+                    37,
+                    42,
+                    "START_TIME"
+                ],
+                [
+                    46,
+                    51,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "He has a guitar lesson at 15:00.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    22,
+                    "EVENT_TITLE"
+                ],
+                [
+                    26,
+                    31,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "They have a swimming practice at 18:00.\r",
+        {
+            "entities": [
+                [
+                    12,
+                    29,
+                    "EVENT_TITLE"
+                ],
+                [
+                    33,
+                    38,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has a dance rehearsal at 16:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    25,
+                    "EVENT_TITLE"
+                ],
+                [
+                    29,
+                    34,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have a piano class at 19:00.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    20,
+                    "EVENT_TITLE"
+                ],
+                [
+                    24,
+                    29,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has a fitness training at 9:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    26,
+                    "EVENT_TITLE"
+                ],
+                [
+                    30,
+                    34,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "We have a client meeting from 15:00 to 17:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    24,
+                    "EVENT_TITLE"
+                ],
+                [
+                    30,
+                    35,
+                    "START_TIME"
+                ],
+                [
+                    39,
+                    44,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "Reminder for the interview at 11:00.\r",
+        {
+            "entities": [
+                [
+                    17,
+                    26,
+                    "EVENT_TITLE"
+                ],
+                [
+                    30,
+                    35,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to finish my homework before 23:59\r",
+        {
+            "entities": [
+                [
+                    20,
+                    28,
+                    "EVENT_TITLE"
+                ],
+                [
+                    36,
+                    41,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to submit my report before 17:00\r",
+        {
+            "entities": [
+                [
+                    20,
+                    26,
+                    "EVENT_TITLE"
+                ],
+                [
+                    34,
+                    39,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have a meeting from 15:00 to 21:00.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    16,
+                    "EVENT_TITLE"
+                ],
+                [
+                    22,
+                    27,
+                    "START_TIME"
+                ],
+                [
+                    31,
+                    36,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "Reminder for the presentation at 12:00.\r",
+        {
+            "entities": [
+                [
+                    17,
+                    29,
+                    "EVENT_TITLE"
+                ],
+                [
+                    33,
+                    38,
+                    "START_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have a presentation from 5:00 to 12:00.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    21,
+                    "EVENT_TITLE"
+                ],
+                [
+                    27,
+                    31,
+                    "START_TIME"
+                ],
+                [
+                    35,
+                    40,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has a doctor's appointment from 18:00 to 21:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    30,
+                    "EVENT_TITLE"
+                ],
+                [
+                    36,
+                    41,
+                    "START_TIME"
+                ],
+                [
+                    45,
+                    50,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The tournament starts tomorrow afternoon and ends on Sunday night 20:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    14,
+                    "EVENT_TITLE"
+                ],
+                [
+                    66,
+                    71,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The workshop starts next week and ends on Friday afternoon 15:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    12,
+                    "EVENT_TITLE"
+                ],
+                [
+                    59,
+                    64,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The conference starts in three days and ends on Sunday evening 15:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    14,
+                    "EVENT_TITLE"
+                ],
+                [
+                    63,
+                    68,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "The seminar starts tomorrow morning and ends on Friday afternoon 15:00.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    11,
+                    "EVENT_TITLE"
+                ],
+                [
+                    65,
+                    70,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to complete the project before 18:30.\r",
+        {
+            "entities": [
+                [
+                    23,
+                    30,
+                    "EVENT_TITLE"
+                ],
+                [
+                    38,
+                    43,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to finish reading the book before 22:00.\r",
+        {
+            "entities": [
+                [
+                    17,
+                    33,
+                    "EVENT_TITLE"
+                ],
+                [
+                    41,
+                    46,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to prepare for the presentation before 9:00.\r",
+        {
+            "entities": [
+                [
+                    26,
+                    38,
+                    "EVENT_TITLE"
+                ],
+                [
+                    46,
+                    50,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to finalize the budget before 15:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    29,
+                    "EVENT_TITLE"
+                ],
+                [
+                    37,
+                    42,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to complete the online course before 20:00.\r",
+        {
+            "entities": [
+                [
+                    23,
+                    36,
+                    "EVENT_TITLE"
+                ],
+                [
+                    44,
+                    49,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to finish writing the essay before 16:30.\r",
+        {
+            "entities": [
+                [
+                    29,
+                    34,
+                    "EVENT_TITLE"
+                ],
+                [
+                    42,
+                    47,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to study for the exam before 19:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    15,
+                    "EVENT_TITLE"
+                ],
+                [
+                    36,
+                    41,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to finish the presentation slides before 14:00.\r",
+        {
+            "entities": [
+                [
+                    21,
+                    40,
+                    "EVENT_TITLE"
+                ],
+                [
+                    48,
+                    53,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to send the email before 13:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    24,
+                    "EVENT_TITLE"
+                ],
+                [
+                    32,
+                    37,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to review the document before 9:20.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    29,
+                    "EVENT_TITLE"
+                ],
+                [
+                    37,
+                    41,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to complete the survey before 8:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    29,
+                    "EVENT_TITLE"
+                ],
+                [
+                    37,
+                    41,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to finish the task before 19:10.\r",
+        {
+            "entities": [
+                [
+                    21,
+                    25,
+                    "EVENT_TITLE"
+                ],
+                [
+                    33,
+                    38,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to analyze the data from 11:00 to 14:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    26,
+                    "EVENT_TITLE"
+                ],
+                [
+                    32,
+                    37,
+                    "START_TIME"
+                ],
+                [
+                    41,
+                    46,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to review the financial reports from 9:00 to 11:00.\r",
+        {
+            "entities": [
+                [
+                    21,
+                    38,
+                    "EVENT_TITLE"
+                ],
+                [
+                    44,
+                    48,
+                    "START_TIME"
+                ],
+                [
+                    52,
+                    57,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to analyze the market trends from 13:00 to 16:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    17,
+                    "EVENT_TITLE"
+                ],
+                [
+                    22,
+                    35,
+                    "EVENT_TITLE"
+                ],
+                [
+                    41,
+                    46,
+                    "START_TIME"
+                ],
+                [
+                    50,
+                    55,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to examine the research findings from 10:30 to 12:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    17,
+                    "EVENT_TITLE"
+                ],
+                [
+                    22,
+                    39,
+                    "EVENT_TITLE"
+                ],
+                [
+                    45,
+                    50,
+                    "START_TIME"
+                ],
+                [
+                    54,
+                    59,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to analyze the customer feedback from 9:30 to 11:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    17,
+                    "EVENT_TITLE"
+                ],
+                [
+                    22,
+                    39,
+                    "EVENT_TITLE"
+                ],
+                [
+                    45,
+                    49,
+                    "START_TIME"
+                ],
+                [
+                    53,
+                    58,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to process the data sets from 14:30 to 17:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    17,
+                    "EVENT_TITLE"
+                ],
+                [
+                    22,
+                    31,
+                    "EVENT_TITLE"
+                ],
+                [
+                    37,
+                    42,
+                    "START_TIME"
+                ],
+                [
+                    46,
+                    51,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I need to review the patient records from 10:00 to 12:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    16,
+                    "EVENT_TITLE"
+                ],
+                [
+                    21,
+                    36,
+                    "EVENT_TITLE"
+                ],
+                [
+                    42,
+                    47,
+                    "START_TIME"
+                ],
+                [
+                    51,
+                    56,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "He has a cooking workshop from 9:30 to 12:00.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    25,
+                    "EVENT_TITLE"
+                ],
+                [
+                    31,
+                    35,
+                    "START_TIME"
+                ],
+                [
+                    39,
+                    44,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has a painting class from 13:00 to 15:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    24,
+                    "EVENT_TITLE"
+                ],
+                [
+                    30,
+                    35,
+                    "START_TIME"
+                ],
+                [
+                    39,
+                    44,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "He has a coding workshop from 10:00 to 12:30.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    24,
+                    "EVENT_TITLE"
+                ],
+                [
+                    30,
+                    35,
+                    "START_TIME"
+                ],
+                [
+                    39,
+                    44,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "He has a photography workshop from 14:30 to 17:00.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    29,
+                    "EVENT_TITLE"
+                ],
+                [
+                    35,
+                    40,
+                    "START_TIME"
+                ],
+                [
+                    44,
+                    49,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has a music class from 11:00 to 13:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    21,
+                    "EVENT_TITLE"
+                ],
+                [
+                    27,
+                    32,
+                    "START_TIME"
+                ],
+                [
+                    36,
+                    41,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has a language course from 9:00 to 11:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    25,
+                    "EVENT_TITLE"
+                ],
+                [
+                    31,
+                    35,
+                    "START_TIME"
+                ],
+                [
+                    39,
+                    44,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "He has a cooking demonstration from 13:30 to 16:00.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    30,
+                    "EVENT_TITLE"
+                ],
+                [
+                    36,
+                    41,
+                    "START_TIME"
+                ],
+                [
+                    45,
+                    50,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has a dance practice from 14:00 to 16:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    24,
+                    "EVENT_TITLE"
+                ],
+                [
+                    30,
+                    35,
+                    "START_TIME"
+                ],
+                [
+                    39,
+                    44,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "He has a cooking class from 11:30 to 14:00.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    22,
+                    "EVENT_TITLE"
+                ],
+                [
+                    28,
+                    33,
+                    "START_TIME"
+                ],
+                [
+                    37,
+                    42,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has a chess class from 10:30 to 13:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    21,
+                    "EVENT_TITLE"
+                ],
+                [
+                    27,
+                    32,
+                    "START_TIME"
+                ],
+                [
+                    36,
+                    41,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "He has a tennis lesson from 18:00 to 20:30.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    22,
+                    "EVENT_TITLE"
+                ],
+                [
+                    28,
+                    33,
+                    "START_TIME"
+                ],
+                [
+                    37,
+                    42,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to attend a business meeting from 9:00 to 11:00.\r",
+        {
+            "entities": [
+                [
+                    19,
+                    35,
+                    "EVENT_TITLE"
+                ],
+                [
+                    41,
+                    45,
+                    "START_TIME"
+                ],
+                [
+                    49,
+                    54,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to clean the house from 13:00 to 15:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    25,
+                    "EVENT_TITLE"
+                ],
+                [
+                    31,
+                    36,
+                    "START_TIME"
+                ],
+                [
+                    40,
+                    45,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to pick up my kids from school from 15:30 to 17:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    17,
+                    "EVENT_TITLE"
+                ],
+                [
+                    21,
+                    25,
+                    "EVENT_TITLE"
+                ],
+                [
+                    43,
+                    48,
+                    "START_TIME"
+                ],
+                [
+                    52,
+                    57,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to buy food at supermarket from 10:30 to 12:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    18,
+                    "EVENT_TITLE"
+                ],
+                [
+                    39,
+                    44,
+                    "START_TIME"
+                ],
+                [
+                    48,
+                    53,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to go to the gym from 9:30 to 11:30.\r",
+        {
+            "entities": [
+                [
+                    20,
+                    23,
+                    "EVENT_TITLE"
+                ],
+                [
+                    29,
+                    33,
+                    "START_TIME"
+                ],
+                [
+                    37,
+                    42,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to run errands from 11:00 to 13:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    21,
+                    "EVENT_TITLE"
+                ],
+                [
+                    27,
+                    32,
+                    "START_TIME"
+                ],
+                [
+                    36,
+                    41,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to meet a friend for lunch from 12:30 to 14:30.\r",
+        {
+            "entities": [
+                [
+                    28,
+                    33,
+                    "EVENT_TITLE"
+                ],
+                [
+                    39,
+                    44,
+                    "START_TIME"
+                ],
+                [
+                    48,
+                    53,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to do grocery shopping from 10:30 to 12:30.\r",
+        {
+            "entities": [
+                [
+                    21,
+                    29,
+                    "EVENT_TITLE"
+                ],
+                [
+                    35,
+                    40,
+                    "START_TIME"
+                ],
+                [
+                    44,
+                    49,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to go for a dental appointment from 15:00 to 17:00.\r",
+        {
+            "entities": [
+                [
+                    19,
+                    37,
+                    "EVENT_TITLE"
+                ],
+                [
+                    43,
+                    48,
+                    "START_TIME"
+                ],
+                [
+                    52,
+                    57,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to walk my dog from 17:30 to 19:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    21,
+                    "EVENT_TITLE"
+                ],
+                [
+                    27,
+                    32,
+                    "START_TIME"
+                ],
+                [
+                    36,
+                    41,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to visit the library from 11:30 to 13:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    27,
+                    "EVENT_TITLE"
+                ],
+                [
+                    33,
+                    38,
+                    "START_TIME"
+                ],
+                [
+                    42,
+                    47,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to do laundry from 10:00 to 12:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    20,
+                    "EVENT_TITLE"
+                ],
+                [
+                    26,
+                    31,
+                    "START_TIME"
+                ],
+                [
+                    35,
+                    40,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to visit my grandparents from 15:00 to 17:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    31,
+                    "EVENT_TITLE"
+                ],
+                [
+                    37,
+                    42,
+                    "START_TIME"
+                ],
+                [
+                    46,
+                    51,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to attend a webinar from 13:30 to 15:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    26,
+                    "EVENT_TITLE"
+                ],
+                [
+                    32,
+                    37,
+                    "START_TIME"
+                ],
+                [
+                    41,
+                    46,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to go for a job interview from 10:00 to 12:00.\r",
+        {
+            "entities": [
+                [
+                    19,
+                    32,
+                    "EVENT_TITLE"
+                ],
+                [
+                    38,
+                    43,
+                    "START_TIME"
+                ],
+                [
+                    47,
+                    52,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to attend a parent-teacher meeting from 14:00 to 16:00.\r",
+        {
+            "entities": [
+                [
+                    19,
+                    41,
+                    "EVENT_TITLE"
+                ],
+                [
+                    47,
+                    52,
+                    "START_TIME"
+                ],
+                [
+                    56,
+                    61,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to take a nap from 15:30 to 17:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    20,
+                    "EVENT_TITLE"
+                ],
+                [
+                    26,
+                    31,
+                    "START_TIME"
+                ],
+                [
+                    35,
+                    40,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to go for a jog from 8:30 to 10:30.\r",
+        {
+            "entities": [
+                [
+                    19,
+                    22,
+                    "EVENT_TITLE"
+                ],
+                [
+                    28,
+                    32,
+                    "START_TIME"
+                ],
+                [
+                    36,
+                    41,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to volunteer at the local shelter from 11:30 to 13:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    19,
+                    "EVENT_TITLE"
+                ],
+                [
+                    46,
+                    51,
+                    "START_TIME"
+                ],
+                [
+                    55,
+                    60,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to go for a bike ride from 14:30 to 16:30.\r",
+        {
+            "entities": [
+                [
+                    19,
+                    28,
+                    "EVENT_TITLE"
+                ],
+                [
+                    34,
+                    39,
+                    "START_TIME"
+                ],
+                [
+                    43,
+                    48,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has to go shopping from 11:30 to 14:00.\r",
+        {
+            "entities": [
+                [
+                    14,
+                    22,
+                    "EVENT_TITLE"
+                ],
+                [
+                    28,
+                    33,
+                    "START_TIME"
+                ],
+                [
+                    37,
+                    42,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has to go to the bank from 13:30 to 16:00.\r",
+        {
+            "entities": [
+                [
+                    21,
+                    25,
+                    "EVENT_TITLE"
+                ],
+                [
+                    31,
+                    36,
+                    "START_TIME"
+                ],
+                [
+                    40,
+                    45,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "He has to go for a haircut from 10:00 to 12:30.\r",
+        {
+            "entities": [
+                [
+                    19,
+                    26,
+                    "EVENT_TITLE"
+                ],
+                [
+                    32,
+                    37,
+                    "START_TIME"
+                ],
+                [
+                    41,
+                    46,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "He has to meet with his advisor from 15:30 to 18:00.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    14,
+                    "EVENT_TITLE"
+                ],
+                [
+                    24,
+                    31,
+                    "EVENT_TITLE"
+                ],
+                [
+                    37,
+                    42,
+                    "START_TIME"
+                ],
+                [
+                    46,
+                    51,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has to have a meeting with colleagues from 12:30 to 15:00.\r",
+        {
+            "entities": [
+                [
+                    18,
+                    41,
+                    "EVENT_TITLE"
+                ],
+                [
+                    47,
+                    52,
+                    "START_TIME"
+                ],
+                [
+                    56,
+                    61,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has to go to the post office from 13:30 to 16:00.\r",
+        {
+            "entities": [
+                [
+                    21,
+                    32,
+                    "EVENT_TITLE"
+                ],
+                [
+                    38,
+                    43,
+                    "START_TIME"
+                ],
+                [
+                    47,
+                    52,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has to meet a colleague for lunch from 12:30 to 15:00.\r",
+        {
+            "entities": [
+                [
+                    32,
+                    37,
+                    "EVENT_TITLE"
+                ],
+                [
+                    43,
+                    48,
+                    "START_TIME"
+                ],
+                [
+                    52,
+                    57,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "He has to meet with his supervisor from 15:30 to 18:00.\r",
+        {
+            "entities": [
+                [
+                    24,
+                    34,
+                    "EVENT_TITLE"
+                ],
+                [
+                    40,
+                    45,
+                    "START_TIME"
+                ],
+                [
+                    49,
+                    54,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has to take a shower from 14:30 to 17:00.\r",
+        {
+            "entities": [
+                [
+                    11,
+                    24,
+                    "EVENT_TITLE"
+                ],
+                [
+                    30,
+                    35,
+                    "START_TIME"
+                ],
+                [
+                    39,
+                    44,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has to pick up groceries from 11:00 to 13:30.\r",
+        {
+            "entities": [
+                [
+                    11,
+                    28,
+                    "EVENT_TITLE"
+                ],
+                [
+                    34,
+                    39,
+                    "START_TIME"
+                ],
+                [
+                    43,
+                    48,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has to go for a workout from 16:00 to 18:30.\r",
+        {
+            "entities": [
+                [
+                    20,
+                    27,
+                    "EVENT_TITLE"
+                ],
+                [
+                    33,
+                    38,
+                    "START_TIME"
+                ],
+                [
+                    42,
+                    47,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She has to take a break from work from 15:00 to 17:30.\r",
+        {
+            "entities": [
+                [
+                    11,
+                    23,
+                    "EVENT_TITLE"
+                ],
+                [
+                    39,
+                    44,
+                    "START_TIME"
+                ],
+                [
+                    48,
+                    53,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I want to play games from 14:00 to 16:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    20,
+                    "EVENT_TITLE"
+                ],
+                [
+                    26,
+                    31,
+                    "START_TIME"
+                ],
+                [
+                    35,
+                    40,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "She want to eat dinner with clients from 14:00 to 16:30.\r",
+        {
+            "entities": [
+                [
+                    16,
+                    22,
+                    "EVENT_TITLE"
+                ],
+                [
+                    41,
+                    46,
+                    "START_TIME"
+                ],
+                [
+                    50,
+                    55,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to do my homework from 14:00 to 16:30.\r",
+        {
+            "entities": [
+                [
+                    16,
+                    24,
+                    "EVENT_TITLE"
+                ],
+                [
+                    30,
+                    35,
+                    "START_TIME"
+                ],
+                [
+                    39,
+                    44,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to prepare for midterm test from 14:00 to 16:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    17,
+                    "EVENT_TITLE"
+                ],
+                [
+                    22,
+                    34,
+                    "EVENT_TITLE"
+                ],
+                [
+                    40,
+                    45,
+                    "START_TIME"
+                ],
+                [
+                    49,
+                    54,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to complete the task before 16:00.\r",
+        {
+            "entities": [
+                [
+                    23,
+                    27,
+                    "EVENT_TITLE"
+                ],
+                [
+                    35,
+                    40,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to relax after 16:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    15,
+                    "EVENT_TITLE"
+                ],
+                [
+                    22,
+                    27,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ],
+    [
+        "I have to sleep before 16:30.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    15,
+                    "EVENT_TITLE"
+                ],
+                [
+                    23,
+                    28,
+                    "END_TIME"
+                ]
+            ]
+        }
+    ]
