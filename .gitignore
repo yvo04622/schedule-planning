@@ -164,3 +164,5 @@ data/
 custom_ner_model/
 .gitignore
 *.spacy
+
+token_method.py
