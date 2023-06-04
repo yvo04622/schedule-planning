@@ -16,7 +16,7 @@ for line in file:
     doc = nlp(line)
     title = ''
     start = text_to_timestamp('0')
-    end = text_to_timestamp('0')
+    end = text_to_timestamp('23:59')
     # Iterate over the entities in the document
     for entity in doc.ents:
         # Print the entity text and its label
