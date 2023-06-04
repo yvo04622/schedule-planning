@@ -1,5 +1,20 @@
-study numerical methods,10:00,11:30
-organization lab5,09:00,10:00
-project,20:00,20:30
-meeting,21:00,23:30
-study wireless networks,15:00,17:00
+numerical methods,00:00,23:59
+organization lab5,09:00,23:59
+,00:00,23:59
+,00:00,23:59
+wireless networks,00:00,23:59
+call,00:00,23:59
+with dog,00:00,23:59
+,00:00,23:59
+,00:00,23:59
+a shower,00:00,23:59
+game,00:00,23:59
+the homework,00:00,23:59
+,00:00,23:59
+up,00:00,23:59
+lesson,00:00,23:59
+up kid,00:00,23:59
+,00:00,23:59
+,00:00,23:59
+,00:00,23:59
+the bus at 14:00,00:00,23:59

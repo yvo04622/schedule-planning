@@ -1,0 +1,20 @@
+study numerical methods,10:00,11:30
+computer organization lab5,09:00,10:00
+AI project,20:00,20:30
+meeting,21:00,23:30
+study wireless networks,15:00,17:00
+phone call to mom,11:50,12:20
+play with dogs,18:20,18:40
+exercise,16:00,17:30
+AI project,00:00,23:59
+take a shower,19:00,23:59
+play game,17:40,23:59
+homework,17:00,18:00
+swim,08:00,23:59
+wake up,00:00,08:00
+yoga lesson,15:30,17:00
+pick up kid,00:00,16:30
+cook,16:30,23:59
+jog,08:00,09:00
+skate,13:30,15:00
+take the bus,00:00,14:00
